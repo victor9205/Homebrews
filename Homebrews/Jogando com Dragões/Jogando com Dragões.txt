@@ -73,4 +73,3 @@ This is your playground. Feel free to remove this and the content above, or keep
 
 <div class='footnote'>Part 2 | Your Introduction</div>
 
-teste
