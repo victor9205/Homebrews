@@ -1,32 +1,1886 @@
-# Welcome  to your next campaign binder!
+<style>
+  .phb#p1:after { display:none; }
+</style>
 
-## Overview on Creating
+<img src='https://orig00.deviantart.net/6fa6/f/2014/224/a/f/old_wizard_by_skiorh-d7utatm.png' class='cover-image' />
 
-GMBinder uses markdown for its primary content. To learn about Markdown and its supporting syntax, [check this out](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+<div class='cover-diamond'></div>
 
-In addition, GM Binder allows for HTML content within your document. However, "User Beware" warnings apply. Especially now in this early stage. Using HTML for things like images and links is pretty safe. However, structured HTML like divs, tables, etc, may have undesired consequences.
+<div class='cover-header'>Council of Wyrms</div>
 
-## GMBinder Specific
-### Page Breaks
-* Using `\pagebreak` will result in a page break. Or press `Ctrl+;` or `Cnd+;` to insert this.
-* Using `\pagebreakNUm` will result in a page break with page number. Or press `Ctrl+'` or `Cnd+'` to insert this.
+<div class='cover-splotch'></div>
 
-### Links
-* Internal Links - Press Ctrl+Space to get a list of all of your document's headers. Press tab on one to insert the link into your document. ie: [Welcome to your next campaign binder!](#welcome-to-your-next-campaign-binder)
-* External Links - Using the standard markdown link syntax with an external URL will result in a link that opens a new tab. ie: [Staff of Darkening](https://www.dndbeyond.com/magic-items/29957-staff-of-anti-thunder-and-darkening)
-* If you would like the actual URL to show in your external link, a simple solution is to simply wrap it with < and >. ie: <https://www.gmbinder.com>
+<div class='cover-footer'>catchy_footer</div>
 
-### Table of Contents
-In the menu above, you'll see a Table of Contents for your document.
+\pagebreak
 
-### Images
-There are a couple ways you can place images. If you would like something positioned like you see on this page, you will need to provide the appropriate styles to do so. For example: 
+<style>
+  .toc a {
+    color: inherit !important;
+  }
 
-`<img src='https://www.gmbinder.com/assets/img/books.jpg' style='position:absolute;bottom:45px;right:30px;width:380px; mix-blend-mode:multiply;' />`
+  .toc li span:nth-child(2){
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap; 
+    display: block;
+  }
 
-If you would like to place an image in-line within your content, simply providing an image tag with an external URL will be sufficient. Do be aware that your images should be sized appropriately for the content.
+  .toc li span:nth-child(2):after{
+    font-family        : BookSanity;
+     font-size       : 0.317cm;
+    font-weight        : normal;
+    color            : black;
+    content:
+      " ........................................"
+      "........................................."
+      "........................................."; 
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family        : BookSanity;
+    font-size       : 0.317cm;
+    font-weight        : normal;
+    color            : black;
+    margin-left        : 1px;
+  }
+
+  .toc li h3 span:nth-child(2):after{
+      content: " ";                        
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;        
+    margin-top: 10px !important;
+    line-height: initial !important;    
+  }
+
+  .toc li h3 span:first-child{
+      line-height: 1.8em !important;      
+  }
+
+  .toc ul ul {
+      margin-left: 10px !important;        
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;    
+  }
+</style>
+
+<div class='wide' style="text-align: center">
+
+### 
+# Table Of Contents
+###
+
+</div>
+
+<div class='toc'>
+
+- ### [<span>1</span><span>Cover</span>](#Cover)
+- ### [<span>1</span><span>Foreword</span>](#Foreword)
+ - - [<span>2</span><span>Using This Document</span>](#Using This Document)
+- - ##### [<span>2</span><span>Foreword</span>](#Foreword)
+  - - [<span>3</span><span>Using This Document</span>](#Using This Document)
+- - ##### [<span>5</span><span>Reference</span>](#Reference)
+  - - [<span>6</span><span>Worldbuilding</span>](#Worldbuilding)
+  - - [<span>8</span><span>Changes</span>](#Changes)
+  - - [<span>9</span><span>Anatomy</span>](#Anatomy)
 
 \columnbreak
+
+- ### [<span>11</span><span>Part I - Assembly</span>](#Assembly)
+- - ##### [<span>12</span><span>Ability Scores, Stat Block</span>](#Ability Scores, Stat Block)
+- - ##### [<span>14</span><span>Quick Guide</span>](#Quick Guide)
+- - ##### [<span>15</span><span>Mana</span>](#Mana)
+
+</div>
+
+\pagebreak
+
+# Foreword
+
+Dragons. They fascinate and inspire so many
+designers of roleplaying games, regardless of
+genre. From fantasy to science fiction, dragons
+lurk in the shadows, soar in the skies, and stalk
+beyond the edges of all our meticulouslydesigned maps, their presence marked by the
+adage that goes with those uncharted territories:
+
+“Here Be Dragons.”
+
+With this document, I took on the task of updating old rules
+and design conceits to match those laid out by Wizards of the
+Coast in their latest edition of the Dungeons and Dragons
+roleplaying game. It is my sincere hope that these rules lead
+to campaigns in which the players have the power to
+command the mightiest of creatures against equally fearsome
+opponents.
+
+Go then, and let all living things shudder at your terrible
+approach!
+
+## A Brief History of the
+## Council of Wyrms
+
+The setting presented in the Council of Wyrms box is one
+where the dragons are center-stage. Their civilization
+dominates the known world, with all others living beneath
+them or in contest for territory.
+
+In the distant past, the dragons fought their own kind in
+endless war. Great Io, the Ninefold Dragon, looked upon them
+and found them wanting. Should not his creations, as
+powerful as they were, rule over the whole of the world in
+unchallenged dominion? Why then were they scattered like
+leaves in a storm, quibbling and slaughtering one another?
+Angered, Io shed his own blood over the empty seas. Divine
+ichor poured into the steaming oceans of the ancient world
+and a mighty chain of islands was born, to which he bade the
+dragons migrate and rule.
+
+Despite this supernal gift, the dragons continued to make
+war upon one another, and Great Io saw that his work was not
+yet done. He visited lands across the sea, lands inhabited by
+lowly and crude human tribes. Io gifted them with great
+knowledge of weapons, armor, and magic, and set them
+against his own children. The humans, led by fearsome
+dragon slayers, landed upon the shores of the Io’s Blood Isles
+and slaughtered even ancient dragons with their techniques,
+sorcery, and ingenuity.
+
+Yet again, Great Io appeared before the mightiest of his
+progeny and gave them the key to their salvation -- unity of the
+dragon clans against the threat of the humans. Only together
+could they stand against the tide of fecund creatures that,
+though puny, nevertheless slaughtered the isolated clans.
+Thus united -- metallic, gem, and chromatic -- they drove the
+humans from the Io’s Blood Isles.
+
+Despite this temporary alliance, the dragons fell back to
+infighting for treasure and territory. Great Io, infuriated,
+appeared to his children yet again in visions, inspiring them to
+create the foundations of a society that would endure through
+the eons. To Exaurdon the Gold, Io gave the dream of an
+enormous aerie where dragons could peacefully gather in
+great numbers. Io guided Bloodtide the Red to construct a
+system of rites and challenges that would replace endless
+conflict and slaughter. He inspired Starratiel the Amethyst to
+create the Council itself, where the wyrms could air
+grievances and reach solutions equitable for all the clans.
+
+The lifespans of dragons are long, and their ideological
+differences vast. Yet the Council has endured, though forces
+both within and without constantly challenge its unity. The
+hate between the breeds is strong, strong enough perhaps to
+defy the edicts of Great Io one more time. Giants raid the
+shores of clan strongholds, monsters breed and haunt the
+wilderness, and the shadow of the dragon slayers waits
+beyond the horizon.
+
+
+### Notes Regarding the Adaptation
+
+I’ve taken care to preserve as much of the flavor of the original
+Council of Wyrms as possible, but many of their rules and
+design conceits do not have good corollaries to the latest
+edition. To that end, some sacred cows were slaughtered, and
+some were transmuted into pigs or sheep.
+
+Some things that you’ll find to be different if you’re familiar
+with the old rules include, but are not limited to, the following:
+
+* You won't be playing a direct import from the Monster
+Manual. Player character dragons start out slightly weaker
+than that, and grow into their power. As with "monster"
+versions of the standard player ancestries, monsters are
+monsters and players are players. You won't be immune to
+energy right away, nor have the full gamut of dragon
+powers as you level.
+
+* There is no strict adherence to age category as your level.
+Dragons in this adaptation gain levels as would normal
+player characters, using the classes presented in the
+Player’s Handbook, though they may find themselves
+limited in power by their age.
+
+* Age categories have been slimmed down from AD&D’s
+original twelve to four from the current edition. The
+categories have much more dramatic effects on the player
+character’s power, and overall power steadily increases as
+the dragon gains class levels.
+
+* There is a much less drastic striation of power between
+dragon breeds, which is generally supported by the update
+to dragons in the current edition -- though a red dragon
+from the Monster Manual is stronger than a white of
+similar age. There should not be a massive inherent
+disadvantage to playing the breed one wants to play, but
+slight power differences may be apparent. A Dungeon
+Master should take care, lest they be surrounded by six
+player character gold dragons.
+
+\pagebreak
+
+* Metallic dragons are slightly stronger as-written due to
+breath weapon varieties. To that end, chromatic and gem
+dragons receive some extra tricks that echo some of their
+old abilities, as well as bonus proficiencies.
+Not every dragon gets innate spells or psionic powers. A
+dragon that chooses a class without these features does
+not receive them.
+
+* Dragons are not limited to the alignment of their breed,
+though dragons with minor differences are considered odd
+and greater differences are revolting to their own breed.
+Current edition rules offer a much broader variety of
+classes, and combinations that were previously not
+possible or might be considered bizarre. Dragons can be
+fighters, wizards, clerics, warlocks, paladins, and more.
+
+* Dragons benefit fully from all ability score bonuses, rather
+than not benefiting at all. This means a dragon with a high
+Dexterity score has an excellent AC, represented by
+preternatural awareness and reflexes. A dragon with
+immense Strength (which most have, eventually) will deal
+great amounts of damage with their physical attacks.
+All dragon family tongues were merged together into
+Draconic.
+
+* Finally, this adaptation includes, for better or worse, rules
+for playing chromatic dragons. Many Dungeon Masters
+may want to ban their use as player characters, but for
+those who can play evil responsibly and not tear apart their
+gaming groups with backstabbing and vindictiveness may
+find great joy in playing a terrifying chromatic wyrm.
+
+## So You Want to Be a
+## Dragon
+
+Playing a dragon is in many ways like playing a character of a
+standard Player’s Handbook ancestry. You generate your
+ability scores (whether rolling, point buying, or using the
+standard array as your Dungeon Master sees fit), apply racial
+bonus to the scores, choose a class, and begin play.
+
+There are, of course, some notable differences. A dragon
+player character is much stronger than an equivalent level
+human, elf, or dwarf, and only gets more powerful from there.
+However, dragons cannot benefit from many class
+proficiencies, such as weapons and armor, since none are
+designed with dragons in mind (with a few exceptions).
+Further, dragons don’t use most equipment, so one would
+ignore the starting gear provided by class and background if it
+cannot benefit the dragon. The player may instead roll for
+their starting gold, which is a small pittance they’ve collected
+and carried with them. This sum may contribute to their
+bonded hoard.
+
+Additionally, some skills and many tool kit proficiencies are
+irrelevant for dragons. They either have better means of
+accomplishing the task with their natural strength and size (or
+servants), or lack the manual dexterity to use the skill or tools
+in question at all. Dragons have special rules for Dexterity
+(Sleight of Hand) checks and other roguish skills, outlined
+later in this document.
+
+\pagebreak
+
+# Dragon Breeds, Families, and Racial
+# Traits
+
+When Great Io created the dragons, he divided
+the dragons into three families, creating a
+balance of power and ideologies. The
+chromatic dragons tended toward cruelty and
+domination, using their strength to gain status
+and quell subordinate dragons within their
+clan. Metallic dragons were on the opposite
+end of the spectrum from the chromatics, comprised of
+dragon breeds that were noble and generally just. Between
+them, the gem dragons were introspective and wise, tending
+toward neither wickedness or benevolence.
+
+
+All player character dragons belong to one of these families
+and their respective breeds. Other dragon breeds, or hybrids
+of any two dragon breeds, are almost completely unknown in
+the Council of Wyrms setting.
+
+
+Regardless of family or breed, all dragons have the
+following qualities in common:
+
+**Speed**. Your base movement speed is 30 feet. You also
+possess a flight speed of 60 feet. At young age and older, your
+movement speed increases to 40 feet and your flight speed to
+80 feet.
+
+**Darkvision**. You can see in dim light within 60 feet of you
+as if it were bright light, and in darkness as if it were dim light.
+You cannot discern color in darkness, only shades of gray.
+
+**Breath** Weapon. Your draconic heritage gives you a breath
+weapon. It inflicts damage of an energy type, volume, and
+range based on your breed, as listed in the breed’s entry. This
+breath weapon becomes stronger as you gain in levels. As an
+action, you can exhale this breath upon your enemies, forcing
+your enemy to make a saving throw (listed under your breed
+entry). If they succeed, a victim suffers only half damage from
+the attack. The saving throw DC is equal to 8 + your
+proficiency bonus + your Constitution modifier. You cannot
+use this ability again until you complete a short rest. If your
+breed allows you to use more than one type of breath attack,
+you can only use one or the other before requiring a short
+rest.
+
+**Fangs**. Almost all dragons (unless otherwise noted) possess
+a natural bite attack that inflicts 1d10 points of piercing
+damage, plus your Strength modifier. At young age and older,
+this damage increases to 2d10.
+
+**Resistance**. You possess resistance to an energy type in
+accordance with your breed, as listed in its respective entry.
+Scales. Dragon hide is tough, and your AC can never be
+worse than 13 plus your Dexterity modifier.
+Toughness. You possess additional maximum hit points
+equal to your class’s starting hit point value. For example, if
+your dragon’s first class level is fighter, you begin play with 10
+extra hit points.
+
+**Languages**. You can speak, read, and write the Draconic
+language. Dragons rarely employ ink and quills to write in the
+Draconic language (especially as they grow larger), but carve
+letters into stone or wood with their claws.
+
+\columnbreak
+
+## Chromatic Dragons
+
+The chromatic wyrms are ordered by color, per the family’s
+name. Often recognized as the most powerful -- and certainly
+as the most terrifying and cruel -- are the red dragons, whose
+progenitors achieved their status by crushing their foes utterly
+and without mercy.
+
+### Black Dragon
+
+Preferring territory in swamps and bogs across the Io’s Blood
+Isles, most black dragons are savage and temperamental
+creatures.
+
+**Ability Score Increase.** Your Strength, Dexterity,
+Constitution, and Intelligence scores each increase by 2.
+Amphibious. You can breathe both air and water. You can
+swim at a speed of 40 feet.
+
+**Insidious Stalker.** You are proficient in Stealth.
+Acid Breath. You can exhale a 15-foot line of acid as your
+breath weapon. This attack deals 2d8 acid damage and
+increases by 1d8 per character level beyond 1st. At young age,
+the range increases to 30 feet. At adult age, it increases to 60
+feet. At ancient age, your acid breath has a 90-foot range.
+Victims who succeed at a Dexterity saving throw suffer only
+half damage.
+
+**Acid Resistant.** You are resistant to acid damage.
+
+### Blue Dragon
+
+The arid deserts and rocky badlands of the islands are the
+domain of the blue dragons. They are cunning and intelligent,
+knowing when to parley, when to fight, and when to flee.
+
+
+**Ability Score Increase.** Your Strength score increases by
+4. Your Intelligence and Wisdom scores both increase by 2.
+
+**Sandwalker.** You feel no discomfort from natural desert
+heat, and can burrow at a speed of 15 feet. This speed
+increases to 20 feet at young age, 25 feet at adult age, and 30
+feet at ancient age.
+
+
+**Lightning Breath.** You can exhale a 30-foot line of lightning
+as your breath weapon. This attack deals 1d10 lightning
+damage per level. At young age, the range increases to 60 feet.
+At adult age, it increases to 90 feet. At ancient age, your
+lightning breath has a 120-foot range. Victims who succeed at
+a Dexterity saving throw suffer only half damage.
+
+**Lightning Resistant.** You are resistant to lightning damage.
+
+\pagebreak
+
+### Green Dragon
+
+Deep, dark forests and jungles are often the territory of the
+fearsome green dragons. Devious and predatory, they use
+guile and intimidation to overcome enemies.
+
+**Ability Score Increase.** Your Strength, Constitution,
+Intelligence, and Charisma scores each increase by 2.
+
+**Amphibious.** You can breathe both air and water. You can
+swim at a speed of 40 feet.
+
+**Devious Wyrm.** You are proficient in Deception.
+
+**Poison Breath.** You can exhale a 15-foot cone of poison gas
+as your breath weapon. This attack deals 3d6 poison damage
+and increases by 1d6 per character level beyond 1st. At young
+age, the range increases to 30 feet. At adult age, it increases to
+60 feet. At ancient age, your poison breath has a 90-foot
+range. Victims who succeed at a Constitution saving throw
+suffer only half damage.
+
+**Poison Resistant.** You are resistant to poison damage.
+
+### Red Dragon
+
+Self-proclaimed kings and queens of the chromatic dragons,
+reds are ambitious, arrogant, and aggressive. They strike first
+and hardest to obliterate opposition.
+
+**Ability Score Increase**. Your Strength score increases by
+4. Your Constitution and Charisma scores both increase by 2.
+
+**Fearsome Mien**. You are proficient in Intimidation.
+
+
+**Fire Breath**. You can exhale a 15-foot cone of fire as your
+breath weapon. This attack deals 4d6 fire damage and
+increases by 1d6 per character level beyond 1st. At young age,
+the range increases to 30 feet. At adult age, it increases to 60
+feet. At ancient age, your fire breath has a 90-foot range.
+Victims who succeed at a Dexterity saving throw suffer only
+half damage.
+
+**Fire Resistant**. You are resistant to fire damage.
+
+
+### White Dragon
+
+Frozen seas and glaciers are the home of the white dragons,
+for whom instinct is greater than logic and the thrill of the
+hunt is the best sensation.
+
+**Ability Score Increase**. Your Strength, Dexterity,
+Constitution, and Wisdom scores each increase by 2.
+
+**Ice Walk**. You can move across and climb icy surfaces
+without needing to make an ability check. Difficult terrain
+comprised of ice or snow doesn’t cost you extra movement.
+You have a burrow speed of 15 feet, which increases to 20 feet
+at young age, 25 feet at adult age, and 30 feet at ancient age.
+
+**Natural Predator**. You are proficient in Survival.
+
+**Ice Breath**. You can exhale a 15-foot cone of ice and cold as
+your breath weapon. This attack deals 2d8 cold damage and
+increases by 1d8 per character level beyond 1st. At young age,
+the range increases to 30 feet. At adult age, it increases to 60
+feet. At ancient age, your cold breath has a 90-foot range.
+Victims who succeed at a Constitution saving throw suffer
+only half damage.
+
+**Cold Resistant**. You are resistant to cold damage.
+
+\columnbreak
+
+## Gem Dragons
+
+Usually seen as aloof to their kin, gem dragons prefer reason
+and introspection to the chromatics’ belligerence or the
+metallics’ righteousness. They are the most likely to be
+psionically endowed, but gem dragons who do not cultivate
+these skills are as bereft of them as their chromatic and
+metallic cousins.
+
+### Amethyst Dragon
+
+Wise and even-tempered, amethyst dragons are councilors,
+mystics, and the strongest proponents of the Council of
+Wyrms. Without the amethysts, the Council would dissolve
+and the clans would revert to dragon war once again.
+
+**Ability Score Increase**. Your Wisdom score increases by 4.
+Your Strength and Intelligence scores both increase by 2.
+
+**Amphibious**. You can breathe both air and water. You can
+swim at a speed of 40 feet.
+
+**Explosive Breath**. You can exhale an explosive lozenge up
+to 30 feet away, which instantly explodes in a 10-foot radius.
+This attack deals 3d6 force damage and increases by 1d6 per
+character level beyond 1st. At young age, the range increases
+to 60 feet and explosion radius to 15 feet. At adult age, it
+increases to 90 feet and explosion radius to 20 feet. At ancient
+age, your explosive lozenge has a 120-foot range with a 25-
+foot explosion radius. Victims who succeed at a Dexterity
+saving throw suffer only half damage.
+
+**Force Resistant**. You are resistant to force damage.
+
+### Crystal Dragon
+
+Capricious creatures, crystal dragons are seen as flighty and
+untrustworthy. There’s some truth to this, but crystal dragons
+live in the moment more than any other dragon breed and
+prefer talking to fighting.
+
+**Ability Score Increase**. Your Dexterity score increases by
+4. Your Intelligence and Charisma scores both increase by 2.
+Size. Your size is Small. Your natural bite attack only deals
+1d8 damage instead of 1d10. This damage increases to 2d8 at
+young age and older.
+
+**Charming Wyrm**. You may use the dancing lights and
+friends cantrips.
+
+**Crystal Breath**. You can exhale a 15-foot cone of glowing
+crystal shards as your breath weapon. This attack deals 2d4
+damage and increases by 1d4 per character level beyond 1st.
+Half of this damage is slashing, and the other half is radiant.
+The slashing component of this attack is treated as though it
+were dealt by a magical weapon for purposes of resistance
+and immunity. At young age, the range increases to 30 feet. At
+adult age, it increases to 60 feet. At ancient age, your crystal
+breath has a 90-foot range. Victims who succeed at a
+Dexterity saving throw suffer only half damage.
+
+**Radiant Resistant**. You are resistant to radiant damage.
+
+<div class='descriptive'>
+ 
+ ##### Crystal Dragons are Small?
+ These dragons are traditionally the most lithe and agile of dragonkind. What they lose in mass and strength they make up for in swiftness and guile.
+ 
+ </div>
+
+\pagebreak
+
+### Emerald Dragon
+
+The fierce chromatics consider emerald dragons to be difficult opponents, for the emeralds have an affinity for traps and misdirection. Some cite this as proof of the emeralds’ devious true nature, but in fact, they merely wish to be left alone to contemplate mysteries.
+
+**Ability Score Increase**. Your Strength, Constitution, Intelligence, and Wisdom scores each increase by 2.
+
+**Introspective**. You are proficient in Insight.
+
+**Shockwave Scream**. You can exhale a 15-foot cone of sonic energy as your breath weapon. This attack deals 2d8 thunder damage and increases by 1d8 per character level beyond 1st. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your sonic breath has a 90-foot range. Victims who succeed at a Dexterity saving throw suffer only half damage.
+
+**Concussion Resistant**. You are resistant to thunder damage.
+
+### Sapphire Dragon
+Among the reserved gem dragons, sapphires are the most given to respond to aggression in kind. They are the physically strongest of the gem dragons and train for battle constantly.
+
+**Ability Score Increase**. Your Strength score increases by 4. Your Intelligence and Wisdom scores both increase by 2.
+
+**Subsonic Scream**. You can exhale a 15-foot cone of subsonic psychic energy as your breath weapon. This attack deals 3d4 damage and increases by 1d4 per character level beyond 1st; half of this damage is psychic, and the other half is thunder. In addition, creatures with a Challenge Rating equal to or less than your level are frightened for 1 minute. They may make a new saving throw at the end of each of their turns to shake off the frightened effect. Creatures may attempt a Wisdom saving throw to halve the damage from your breath weapon and ignore the frightened effect. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your subsonic scream has a 90-foot range.
+
+**Fear Resistant**. You have advantage on saving throws against effects that cause you to be frightened.
+
+**Untrappable**. You have advantage on saving throws against effects that inflict the restrained or paralyzed conditions.
+
+### Topaz Dragon
+Brusque and unfriendly, topaz dragons are very unlike their fellow gem dragons. They rarely participate in Council activity unless their personal interests are at stake, and have a laissez-faire attitude toward most things.
+
+**Ability Score Increase.** Your Strength, Dexterity, Constitution, and Wisdom scores each increase by 2.
+
+**Amphibious**. You can breathe both air and water. You can swim at a speed of 40 feet.
+
+**Desiccating Breath.** You can exhale a 15-foot cone of desiccation as your breath weapon. This attack deals 4d4 necrotic damage and increases by 1d4 per character level beyond 1st. Targets who fail a Constitution saving throw against this effect suffer one level of exhaustion. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your desiccating breath has a 90-foot range. Victims who succeed at the above Constitution saving throw suffer only half damage.
+
+**Necrotic Resistant.** You are resistant to necrotic damage.
+
+## Metallic Dragons
+Beloved by their subjects, the metallic dragons are seen as the paragons of nobility and justice in the world they rule. Nevertheless, they are fierce when angered, and their morality can be choking to those who would live a less righteous existence.
+
+### Brass Dragon
+Talkative and cheerful, brass dragons are the breed most likely to drive one to distraction with constant chatter. They have many friends as a result, but equally as many enemies.
+
+**Ability Score Increase**. Your Strength, Dexterity, Wisdom, and Charisma scores each increase by 2.
+
+**Fire Breath**. You can exhale a 30-foot line of fire as your breath weapon. This attack deals 2d6 fire damage and increases by 1d6 per character level beyond 1st. At young age, the range increases to 60 feet. At adult age, it increases to 90 feet. At ancient age, your fire breath has a 120-foot range. Victims who succeed at a Dexterity saving throw suffer only half damage.
+
+**Sleep Breath**. You can exhale a 15-foot cone of sleep gas as your breath weapon. Those caught in the area of effect must succeed a Constitution saving throw with a DC equal to 8 + your proficiency bonus + your Constitution modifier or fall unconscious for 10 minutes. This effect ends if the creature takes damage or someone uses an action to wake it. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your sleep gas has a 90-foot range.
+
+**Fire Resistant**. You are resistant to fire damage.
+
+### Bronze Dragon
+Courageous and daring, bronze dragons are champions of good and defenders of the weak, ruling coastal settlements with a fair but firm claw.
+
+**Ability Score Increase.** Your Strength, Constitution, Wisdom, and Charisma scores each increase by 2.
+
+**Amphibious.** You can breathe both air and water. You can swim at a speed of 40 feet.
+
+**Lightning Breath.** You can exhale a 30-foot line of lightning as your breath weapon. This attack deals 1d10 lightning damage per level. At young age, the range increases to 60 feet. At adult age, it increases to 90 feet. At ancient age, your lightning breath has a 120-foot range. Victims who succeed at a Dexterity saving throw suffer only half damage.
+
+\pagebreak
+
+**Repulsion Breath.** You can exhale a 15-foot cone of repulsion gas as your breath weapon. Those caught in the area of effect must succeed a Constitution saving throw or be pushed 30 feet away from the dragon. At young age, the range increases to 30 feet and pushes the victim 40 feet away. At adult age, range increases to 60 feet and the target is pushed 50 feet away. At ancient age, your repulsion gas has a 90-foot range and pushes targets 60 feet away.
+
+**Lightning Resistant.** You are resistant to lightning damage.
+
+### Copper Dragon
+Eminent tricksters, copper dragons dwell in the badlands of the Io’s Blood Isles and often skirmish with the more-ferocious blues for territory. They make up for their physical detriment by cajoling and berating their enemies into making mistakes.
+
+**Ability Score Increase.** Your Strength, Dexterity, Intelligence, and Charisma scores each increase by 2.
+
+**Deft Climber.** Your claws are well-adapted for scaling cliffs and narrow gulches where your wings would be of little use. You climb at full speed and do not need to make checks to avoid falling.
+
+**Acid Breath.** You can exhale a 20-foot line of acid as your breath weapon. This attack deals 2d8 acid damage and increases by 1d8 per character level beyond 1st. At young age, the range increases to 40 feet. At adult age, it increases to 60 feet. At ancient age, your acid breath has an 80-foot range. Victims who succeed at a Dexterity saving throw suffer only half damage.
+
+**Slowing Breath.** You can exhale a 15-foot cone of slowing gas as your breath weapon. Those caught in the area of effect must succeed a Constitution saving throw or have their speed halved, and be unable to make more than one attack per turn. In addition, the target cannot use reactions, and can use only an action or bonus action (but not both) on its turn. At the end of each turn, the victim may make another saving throw to end this effect. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your slowing breath has a 90-foot range.
+
+**Acid Resistant.** You are resistant to acid damage.
+
+### Gold Dragon
+Resplendent and mighty, gold dragons are held in awe by both vassal species and most fellow dragons -- save for the chromatic wyrms who loathe them above all others. Red dragons in particular will clash with golds over any perceived slight, seeing them as challengers for supremacy among all dragons.
+
+**Ability Score Increase.** Your Strength score increases by 4. Your Intelligence and Charisma scores both increase by 2.
+
+**Amphibious.** You can breathe both air and water. You can swim at a speed of 40 feet.
+
+**Fire Breath.** You can exhale a 15-foot cone of fire as your breath weapon. This attack deals 2d10 fire damage and increases by 1d10 per character level beyond 1st. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your fire breath has a 90-foot range. Victims who succeed at a Dexterity saving throw suffer only half damage.
+
+**Weakening Breath.** You can exhale a 15-foot cone of weakening gas as your breath weapon. Those caught in the area of effect must succeed a Strength saving throw or have disadvantage on Strength checks, Strength-based attack rolls, and Strength saving throws for 1 minute. At the end of each turn, the victim may make another saving throw to end this effect. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your weakening gas has a 90-foot range.
+
+**Fire Resistant.** You are resistant to fire damage.
+
+### Silver Dragon
+Where gold dragons inspire awe, silver dragons inspire hope. They are the most beloved by their subjects and the most easily riled to defending the weak or the Council’s wishes.
+
+**Ability Score Increase.** Your Strength score increases by 4. Your Wisdom and Charisma scores both increase by 2.
+
+**Cold Breath.** You can exhale a 15-foot cone of ice and cold as your breath weapon. This attack deals 2d8 cold damage and increases by 1d8 per character level beyond 1st. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your fire breath has a 90-foot range. Victims who succeed at a Dexterity saving throw suffer only half damage.
+
+**Paralyzing Breath.** You can exhale a 15-foot cone of paralyzing gas as your breath weapon. Those caught in the area of effect must succeed a Constitution saving throw or be paralyzed for 1 minute. At the end of each turn, the victim may make another saving throw to end this effect. At young age, the range increases to 30 feet. At adult age, it increases to 60 feet. At ancient age, your weakening gas has a 90-foot range.
+
+**Cold Resistant.** You are resistant to cold damage.
+
+
+\pagebreak
+
+# Classes
+
+Dragons find themselves masters of most pursuits they focus on, and can excel in almost every class and archetype in the Player’s Handbook. There are some considerations, however, given the physiology of dragons in general, as well as a small handful of outright restrictions.
+
+## Proficiencies and “Melee Weapon Attacks”
+
+The claws of dragons, while fairly dexterous, cannot hold weapons or tools in any useful manner. Likewise, their natural defenses render armor moot. As such, any class’s weapon, armor, and tool proficiencies are ignored for dragons. They gain the class’s saving throw and skill proficiencies, however.
+
+The dragon’s natural attacks (be they bite, claw, tail, or wing) count for any situation in which a class ability references a melee weapon attack. For example, a barbarian’s Reckless Attack ability can be performed with a dragon’s bite attack.
+
+## Draconic Fighting Styles
+
+Any class that affords a dragon fighting styles does not allow them access to the standard array of styles (Great Weapon Fighting, etc.). Instead, the dragon uses styles to gain additional natural attacks and augments to its already-formidable combat prowess. A list of dragon fighting styles is provided below.
+
+### Aerial Superiority
+
+If you have moved any portion of your fly speed on your turn, you gain a +2 bonus to attacks made against opponents who are smaller than or the same size as you, and your AC increases by 2 against opponents larger than you, until the beginning of your next turn.
+
+### Battering Wing
+
+Requirement: You must be of adult or ancient age to take this style.
+
+Whenever you are hit by a melee attack, you may use your reaction to perform a special wing buffet attack against the enemy that struck you. If this attack hits, the target suffers bludgeoning damage equal to your claw attack. If the target is also at least one size smaller than you, they must make a Strength saving throw with a DC equal to 8 + your Strength modifier + your proficiency bonus. If they fail, they are knocked prone. You may immediately fly up to half of your fly speed.
+
+\columnbreak
+
+### Brutal Impact
+
+If you end your turn adjacent to an enemy after moving at least half of your fly speed, you can crash into them as a reaction. Make a single melee attack; on a hit, deal bludgeoning damage equal to your bite attack. Regardless of whether or not you hit, melee attacks made against you have advantage until the end of your next turn.
+
+### Elemental Jaws
+
+Whenever you make a bite attack, you deal additional damage of a type that is the same as your damaging breath weapon, of a value based on your age. If you are a sapphire dragon, this damage type is thunder. If you are a crystal dragon, this damage type is radiant.
+
+Wyrmling: 1d6
+Young and Adult: 1d10
+Ancient: 2d10
+
+### Fang and Claw
+
+You gain the ability to make two claw attacks as a bonus action whenever you make a bite attack. These claws deal slashing damage and have reach according to your age. Add your Strength modifier to the damage of these attacks.
+
+Wyrmling: 1d4, 5-foot reach
+Young: 1d6, 5-foot reach
+Adult: 1d8, 10-foot reach
+Ancient: 1d10, 10-foot reach
+
+### Frightful Presence
+
+Requirement: You must be of adult or ancient age to take this style.
+
+Whenever you make a melee attack, you cause all hostile creatures within 120 feet to make a Wisdom saving throw or become frightened for one minute. A frightened creature can repeat the saving throw at the end of each of its turns. If it succeeds a saving throw, it is immune to your frightful presence for 24 hours. The DC for the saving throw is 8 + your proficiency bonus + your Charisma modifier.
+
+Other dragons are immune to your frightful presence ability.
+
+### Ironscale Defense
+
+Your Armor Class increases by 2.
+
+\pagebreak
+
+### Lashing Tail
+
+You gain a tail attack that you can use as a bonus action. This attack gains your Strength modifier to damage. The base damage and reach are determined by your age. This attack deals bludgeoning damage.
+
+Wyrmling: 1d6, 10-foot reach
+Young: 1d8, 10-foot reach
+Adult: 2d8, 15-foot reach
+Ancient: 2d8, 20-foot reach
+
+### Lunging Maw
+
+Your bite attack gains the reach property and can strike targets up to 5 additional feet away from you. When biting opponents that are not within 5 feet of you, you deal an additional die of piercing damage.
+
+### Sly Talon
+
+Your bite, claw, tail, and wing attacks gain the finesse quality, allowing you to use your Dexterity modifier for attack and damage bonuses instead of Strength. Furthermore, you gain a +2 bonus to initiative rolls.
+
+### Extra Attacks
+
+Dragons do not benefit from extra attacks in the same way that standard player characters do. On any level at which the dragon would receive this ability, they instead select one additional dragon fighting style of their choice.
+
+## Class Considerations
+
+### Barbarian
+
+There are no restrictions or further considerations for dragon barbarians save those listed above. The class appeals to the brutal chromatics, whites and reds most of all. A raging dragon can destroy entire villages with ease.
+
+### Bard
+
+While they are incapable of playing conventional instruments, dragons can and often do sing well if they apply themselves to it. They may be bards without restriction, though most dragon bards are crystal and copper dragons.
+
+### Cleric
+
+The dragons have a small pantheon of gods to which they give homage, with Great Io chief among them. The major gods have domains in accordance with their spheres of influence. Any dragon may be a cleric. See the sidebar "The Dragon Pantheon" for a list of appropriate deities.
+
+### Druid
+
+Dragons rarely belong to any official druidic societies; their natural impulses and commanding presences complicate such structures. Nevertheless, dragons can be druids, though they rarely bother to assume wild shape unless the shape grants them a mode of movement or other adaptation they would not otherwise possess.
+
+\columnbreak
+
+### Fighter
+
+Although dragons lack prowess with wielded weapons, they excel as fighters and can belong to any archetype. Silver, blue, and sapphire dragons are most commonly fighters. They learn a number of draconic combat styles throughout their lives and are formidable opponents even among dragons.
+
+### Monk
+
+There are few, if any, examples of dragon monks. While they may possess the mental and physical fortitude to accomplish the same goals, they find it difficult to focus ki energy like vassals might. A dragon using monk fighting styles would be particularly deft and smooth in their motions, and there are few reasons they could not carry the class to its full potential.
+
+### Paladin
+
+While not exclusively limited to the family, most paladins are metallic dragons. The Oaths tend to be flavored towards the belief systems of their societies and draconic families. In particular, gold dragons are often paladins.
+
+### Psion
+
+Psionic powers are extremely rare among any dragons except gem dragons, and even for their family, they are sometimes an afterthought. Amethyst dragons are most commonly psions. For a “proper” old-fashioned game, the psion class should be restricted to gem dragons only. If the Dungeon Master is less strict about such things, other psionic dragons are possible, albeit very rare.
+
+
+> At the time of this writing, there is no official psion class. Use whichever version you like from Unearthed Arcana or DM's Guild product!
+
+### Ranger
+
+Dragon rangers can belong only to the Hunter archetype. Their natural combat capabilities render the assistance of an animal companion moot, nor would they find it fitting to bond with such base beasts (vassals are a different matter, at least to most dragons). In place of Whirlwind Attack or Volley at 11th level, dragons choose from the styles listed above. Bronze and green dragons frequently advance as rangers.
+
+### Rogue
+
+The idea of a dragon rogue may be hilarious to most, as they imagine an enormous wyrm picking the pocket of an unsuspecting elf in a shadowed alley. While this situation is unlikely, dragons can make good rogues, commanding criminal enterprises within vassal settlements. They are particularly adroit and cunning wyrms, inflicting savage bite attacks against the unwary and dismantling mechanisms with a flick of their talons. Crystal, brass, and black dragons make good rogues.
+
+\pagebreak
+
+Dragons who select the rogue class automatically treat their attacks as though they possess the finesse quality, enabling them to use either their Strength or Dexterity to determine the attack and damage bonus.
+
+Rogue dragons cannot be proficient in thieves’ tools, as their claws do not allow for such fine manipulation even at wyrmling age. However, they may employ vassal servants to do this for them, or attempt to trigger a trap without harm to themselves by using the Dexterity (Sleight of Hand) skill.
+
+Dragons who pick certain archetypes may replace proficiency with disguise kits and poisoner’s kits with the following trait:
+
+<div class='descriptive'>
+ 
+ ##### Toxic Bite
+ You become inured to ingested poisons, and are no longer subject to their deleterious effects. You can consume a number of doses of poisons equal to 1 + your Constitution modifier. Whenever you deal damage with your bite attack, you may force the victim to make a poison saving throw for one of the poisons you have consumed or be subject to its effects. That dose of poison is then flushed from your system.
+ 
+ </div>
+
+Naturally, logic and reason dictate if a dragon can remain hidden with a Dexterity (Stealth) check. Keep in mind that a dragon’s much larger body requires larger objects to fully break line of sight with an enemy.
+
+### Sorcerer
+
+Dragons may select any sorcerer archetype they desire. The Draconic bloodline option presents unusual story possibilities: are you the scion of a particularly legendary wyrm? Are you imbued with the power of another breed? Great concern and comment may shadow the dragon sorcerer if the latter is true.
+
+### Warlock
+
+While rare, dragon warlocks can and do exist. Chromatic dragon warlocks are especially fearsome, with black and green dragon warlocks most common of all. Emerald and topaz dragons might also be drawn to the power and insight that otherworldly entities can provide.
+
+For dragons who select Pact of the Blade, the form of the “pact blade” might be a single blackened claw or fang. Be creative!
+
+### Wizard
+
+Magic comes as easily to dragons as swimming does to fish, and so many dragons become wizards. Their grimoires tend to be much larger and more sturdy than a human or elf wizard’s spellbook, and are often inscribed on lacquered wood plates, stone tablets, or pages enchanted to resist tearing as they peruse the volume with their talons.
+
+\columnbreak
+
+##### The Dragon Pantheon
+| Deity  | Associated Domains |
+|:---:|:-----------:|
+|  Great Io  | Knowledge |
+|  Aasterinian  | Trickery |
+|  Astilabor  | Forge |
+|  Bahamut  | Light |
+|  Chronepsis  | Grave |
+|  Faluzure  | Death |
+|  Garyx  | Tempest |
+|  Hlal  | Trickery |
+|  Lendys  | Arcana |
+|  Tamara  | Life, Nature |
+|  Tiamat  | War |
+
+*Arcana is a domain listed in the Sword Coast Adventurer's Guide*
+
+*Forge and Grave are domains listed in Xanathar's Guide to Everything.*
+
+
+\pagebreak
+
+## Natures
+
+Draconic natures replace backgrounds for player characters in the Council of Wyrms setting. They supplant the functionality of backgrounds entirely, granting some of their benefits while also providing different features and inherent goals for player characters.
+
+A nature is a combination of supplementary player power and roleplaying hook. Since most dragon player characters begin at wyrmling age (and often not long after they are hatched), it might not make sense to give them a broad back history.
+
+However, dragons are powerfully instinctual creatures, driven to pursue goals instilled within them from their time in the egg. Caretakers, whether vassal or dragon, whisper and sing to the nascent wyrm to fill their growing bodies with knowledge and drive. Through this process, a wyrmling can speak, act, and think clearly very shortly after breaking out of its shell.
+
+Sometimes what is said to the dragon in its egg helps determine its nature, but just as often a dragon will prove to be a surprise to its progenitor -- not always in a good way, either.
+
+A special feature of natures is their inclusion of objectives. These are your dragon’s goals, and by completing them you gain benefits in accordance with their entries. A wise Dungeon Master and respectful player should never leverage these as brute instruments to determine how a dragon is to be played, nor should objectives be used to abuse or undermine other players, unless everyone in the group has agreed to it.
+
+### Ambitious
+
+Dragons with this nature are primed for ascension into the ranks of clan politics when they come of age. They understand that to attain power, one must be willing to seize opportunities and hold them with an iron claw. While not all ambitious dragons are deceitful or belligerent, they know when to apply those two qualities to get what they want.
+
+**Bonus Proficiencies:** Deception, Intimidation
+
+**Feature:** Pathways of Power
+
+When interacting with individuals of station, you instinctively sense their pecking order and can deftly navigate the waters of their power relationships. You can determine whether a particular creature is worth negotiating with, or whether your time would be best served finding their superior. Your Dungeon Master will call for ability checks to make this determination, if necessary.
+
+Furthermore, you can acquit yourself in such a way that clan dominates or Council representatives recognize your savvy and treat you as befits your ambition, though this rarely manifests in such a way that you gain anything more than a token audience with such individuals.
+
+Whenever you acquire titles or accolades, such as control over a vassal tribal government or appointment as a clan dominate, you have advantage on Charisma checks made to influence individuals to which those titles apply. Additionally, you may treat titles and accolades you receive as contributions to your bonded hoard. Your Dungeon Master will determine the approximate value of a given title based on its importance and treat it as a magical item for purposes of calculating its cost (based on common, uncommon, rare, very rare, or legendary).
+
+### Avaricious
+
+Though all dragons hoard treasure and have an avaricious side, these dragons are particularly greedy. While their own moral compass may discourage them from theft or manipulating their fellow dragons, they usually feel no compunction about doing so to vassals or humanoid tribes.
+
+Avaricious dragons instinctively sense the approximate worth of valuable objects and can determine when an object is a forgery or otherwise replicated from an original piece that they know about. These makes them shrewd customers when dealing with merchants, be they dragon or otherwise, and oft sought after for identifying the qualities of rare items.
+
+**Bonus Proficiencies:** Deception, Sleight of Hand
+
+**Feature:** Greed is Good
+
+The accrual of material wealth is tied with whatever your other goals may be, and you will rarely agree to perform a task without some form of compensation. The growth of your hoard goes beyond mere necessity -- it is the only thing that brings you true peace.
+
+You can determine the approximate value (in gold pieces) of any object you spend an action to study. Additionally, whenever your accumulating hoard is greater than the value of your bonded hoard, you may use the identify spell as a ritual, regardless of whether or not your class allows you to use ritual magic.
+
+### Competitive
+
+Even dragons can have a competitive streak, and those with this nature are particularly prone to undertake challenges for which they might not be ready. While this nature does not supply the dragon with a death wish, it is likely the wyrm will seek to confront dangers rather than circumvent them -- unless, of course, the challenge is to do just that.
+
+**Bonus Proficiencies:** Athletics, Intimidation
+
+**Feature:** Rise to the Challenge
+
+When you attempt to perform an ability or skill check with a DC of 15 + your level or greater, you may elect to gain advantage on the check. You may only gain advantage in this way once before requiring a long rest before you can use it again.
+
+\pagebreak
+
+### Inquisitive
+
+Particularly among crystal dragons, inquisitive wyrms have a habit of unearthing tidbits of information in such a way as to draw the ire of those who would rather see secrets buried. Driven by more than simple curiosity, dragons with this nature are almost obsessive with their need to poke their snouts where they don’t belong.
+
+**Bonus Proficiencies:** Investigation, Perception
+
+**Feature:** Unmasking the Unknown
+
+Whenever you are told that a place is forbidden, you simply have to know why. Your elders won’t ever fully understand or support your need to dig into abandoned ruins, seek out dragon graveyards, or unearth peculiar mysteries. As such, you should always try to spur discovery or encourage a venture to a place left yet unexplored. The Io’s Blood Isles are huge, and even its masters do not know every corner of the land.
+
+Discovering new places or secrets is of great interest to you, and your natural inclinations give you a sense of where secrets might hide. You may use one of the following spells once: detect evil and good, detect magic, or detect poison and disease. You regain the use of this special sense after completing a long rest. If you belong to a spellcasting class, you instead add these spells to your list of spells known.
+
+### Guardian
+
+Dragons don’t exclusively hoard and dominate, but few seek out a group or place to actively protect. Those with the guardian nature are among those few, who are compelled to shepherd a small flock or watch over a particular place. The dragon’s charge may be a small tribe of vassals, a natural landmark, or a precious bauble of some unknown purpose.
+
+Players who choose the guardian nature should work with the Dungeon Master to determine what they protect. People will not generally accompany you on endeavors, and they should never be used as cannon fodder. A bauble is typically non-magical, though secret qualities may be revealed throughout your adventures.
+
+**Bonus Proficiencies:** Perception, Survival
+
+**Feature:** Sacred Protectorate
+
+Your protectorate is deeply important to you, and anything that puts it at risk incurs your wrath. While in active defense of object, location, or people of your protectorate, you gain advantage on saving throws against aggressors. You do not gain this bonus if you willingly put your protectorate at risk, such as using a village as bait for a raid or placing your prized heirloom in the midst of a battlefield to draw attention.
+
+The bond between you and your protectorate energizes you and regenerates your wounds. While resting in the presence of your protectorate, you double the amount of hit points regained by expending hit dice for a short rest and regain all of your hit dice expended after a long rest.
+
+Should your protectorate ever be stolen or removed, you operate under the effects of the bestow curse spell unless you are in direct pursuit of retrieving it (the Dungeon Master chooses the exact effect). If your protectorate is destroyed (such as your village of vassals being completely slaughtered), you suffer the same effect until you replace it with a new protectorate, after a period of mourning no less than one month.
+
+Receiving the effects of a remove curse spell while under this effect will suppress the curse for a period of 24 hours, after which it returns.
+
+### Mediator
+
+Dragons quickly master any pursuit they put their minds to, and as such are notoriously adept at disagreeing with one another. The various dragon wars throughout the millennia are proof enough of this, and it takes a strong leader skilled at mediation to keep the clans from killing one another.
+
+A wyrm with the mediator nature is one such dragon. While they may not necessarily hold leadership positions, they have a knack and a desire to keep the peace between entities and prevent conflict from erupting.
+
+**Bonus Proficiencies:** Insight, Persuasion
+
+**Feature:** Adept Negotiator
+
+Dragons with this nature frequently adjudicate disputes or act as advocates on a party’s behalf. Mediators may find themselves representing a vassal village’s petition to secede from their clan, or act as the judge in a Challenge of Claw and Wing. Regardless of their breed, a mediator dragon is seen as an impartial party until their actions prove otherwise.
+
+You are always treated at least neutrally by dragons belonging to any Council-affiliated clan (that is to say, every clan that is not on the outs with the Council for some reason or another) and may be asked to intervene in some matter or other. Even when dealing with breeds at odds with your own, they show you due respect -- at least, until your back is turned.
+
+You may make a Wisdom (Insight) check after at least 1 minute listening to the arguments of an individual, with a DC equal to 10 + the target's Intelligence modifier. If you are successful, you gain advantage on Charisma ability and skill checks made to deal with that individual for 1 hour.
+
+### Predator
+
+Particularly among the brutal chromatic breeds, hunting and devouring prey is one of the greatest joys a dragon can experience. Whether it is a white dragon dragging a slain whale to shore to gorge upon it, or a copper dragon pouncing upon and outfoxing a giant scorpion, all wyrms feel this instinct.
+
+For some, however, it goes beyond just instinct, and is woven into their very nature. These dragons are truly apex predators, and their ability to strike first is uncanny.
+
+**Bonus Proficiencies:** Stealth, Survival
+
+**Feature:** First Strike
+
+The cohorts of a dragon with this nature may find their ally wandering off to chase small prey or toying with helpless creatures, even if they never deal a killing stroke. In some this can manifest as tormenting the poor victim, but in others it is simply harmless play that belies a pinnacle predator instinct. These wyrms are cat-like in their actions, which may seem precocious when they are young, but is terrifying when they are massive and can shred steel as easily as paper.
+
+Predator dragons are adept at getting the drop on enemies. When a dragon with the predator nature successfully attacks a target that is surprised or does not otherwise detect their presence (such as when hidden or invisible), that target suffers disadvantage when attacking the dragon until the end of the dragon’s next turn.
+
+\pagebreak
+
+### Sophont
+
+While the vassals establish academies of learning and institutions of magic, dragons rarely bother with such organizations. Most are naturally intelligent and have superb memories that are as sharp and long as their claws, but sophont dragons resemble the sages and scholars of the vassals more than they do the rest of dragonkind.
+
+Eagerly devouring (at least, in the figurative sense) books, art, poetry, and music, sophonts spring at the opportunity to learn new things and experience new sensations. To them, the greatest wisdom is not in being the master, but being the student.
+
+**Bonus Proficiencies:** Choose two from among Arcana, History, Nature, Religion.
+
+**Feature:** Broad Knowledge
+
+Sophont dragons eagerly seek out new experiences and are diligent learners. They rarely turn down the opportunity to try something they have not tried before, and practically never call something they do not understand “stupid” or “pointless,” regardless of its absurdity. Sophonts prefer to determine that for themselves.
+
+The innate willingness to learn makes a sophont dragon pick up secrets from its handlers while still in the shell, more than that imparted by simple care and racial memory. You may pick one spellcasting class that uses cantrips, and select three cantrips from its spell list. You may use these cantrips innately, without the use of spellbooks, prayer, or material components.
+
+\pagebreak
+
+# Dragon Age Categories, Ability Scores, and Advancement
+Dragons tend to be stronger, tougher, and smarter than most mortal species. Their racial ability score bonuses are wildly beyond the scope of standard player characters, and their upper bounds are much higher as well. 
+<br/>
+A standard Player’s Handbook character has a natural upper limit of 20 for an ability score. For dragons, this limit increases as the dragon’s age category improves. A starting dragon character is considered a **wyrmling**, and their ability score maximum is the standard 20. When a dragon achieves the young age category, their limit increases to 22. **Adult** dragons increase this yet further to 25. Finally, the mighty **ancient** wyrms have an ability score limit of 30.
+
+ <div class='descriptive'>
+  
+  ##### Why the Level Caps?
+ Some might ask about the level limitations of age categories and why they should wait literal centuries before advancing to the height of their power. Unlike vassals, dragons really do have all the time in the world. They may be strong, intelligent, or charming, but there's a limit to what they can do as immature representatives of their species.
+
+Dragons experience time differently than most. For them, a short holiday might be a year or two on a dwarf's calendar, while a long quest to achieve a goal could take decades. Draconic memories are sharp and they won't easily forget people they dealt with years ago, though as the dragon matures they might be less surprised when they find their contacts old and gray the next time they see them.
+
+As such, most campaigns for the Council of Wyrms game take place on a larger, more stretched-out time scale. That is not to say that dragons ignore imminent threats by those who live day to day, but when considering a danger, dragons take the long view. Immediate action may not be prudent or even necessary. This aloofness, even apparent passivity, might chafe vassals, and especially irritates humans and goblinoids who deal with dragons.
+</div>
+ 
+## Wyrmling
+
+Newborn dragons are still powerful creatures. **Wyrmlings** emerge from their shells with impressive physical prowess and knowledge imparted to them, through their innate magical nature and the murmurings of their egg caretakers. A wyrmling dragon can be anywhere from the size of an average dog (such as in the case of crystal dragons, the smallest breed) to that of a full grown half-orc (red dragons are born the largest of all wyrms, even outpacing golds for a time).
+
+All wyrmling dragons are Medium sized creatures, except for crystal dragons, who begin as Small creatures. Their exact dimensions are up to the player to determine within this boundary, though dragon tails are rarely longer than their body length and wingspan is usually as broad as the dragon’s whole length (body and tail).
+
+Wyrmlings have practically no influence in dragon society. They are rarely accorded any status, save by vassals; parentage almost never grants them stature. The duty of a wyrmling is to watch and learn from its betters, performing small tasks as clan or Council mandates and preparing for advancement through society as the years pass.
+
+The dragon’s physiology and limitations prevent it from advancing beyond 5th level throughout its wyrmling stage. Experience may continue to accrue as it is earned (if the Dungeon Master wishes), but no wyrmling may advance to 6th level or beyond.
+
+A wyrmling remains such until its thirtieth year of life, at which time it enters a dragon sleep within its lair. During this dragon sleep, the dragon bonds with its hoard and its territory, drawing supernatural strength from the land and the ambient magic of its treasures. At the end of this dragon sleep, which lasts no less than six months, the wyrmling emerges as a young dragon.
+
+## Young
+
+At this point, the **young** dragon grows to Large size (or Medium, for crystal dragons) and its physical attacks become more formidable. All ability scores increase by +2, up to a maximum of 22. The dragon’s maximum hit points increase by 30, and it gains a +1 bonus to AC. Young dragons receive only slightly more respect than wyrmlings, but have begun to learn and perform at a level where they better serve clan and Council.
+
+When dragons muster to war, most who fight are young dragons, under the command of adults. They are strong enough to do battle with the dragons’ usual enemies, but are never spent frivolously (save in the chromatic clans, who know that the weak are expendable). Young dragons are most easily compared to an “adventurer” caste among vassal species, and frequently interact with them as they go about their duties.
+
+All dragons of this age are expected to leave the nests and aeries of their birth and found a lair of their own, usually within their clan’s territory. Stewards and aides of the Council often receive a lair within the Council Aerie itself while they conduct their duties.
+
+A young dragon cannot advance beyond 10th level in their chosen class. Experience may continue to accrue, as above with wyrmlings (with the Dungeon Master’s approval), but no young dragon may advance to 11th level or beyond.
+
+\pagebreak
+
+Young dragons that reach their two hundredth year once again sink into dragon sleep, bonding with hoard and land to grow stronger. At the end of one year’s sleep, the dragon emerges as an adult.
+
+## Adult
+
+Dragons of **adult** status truly come into their own, gaining status and power as befits the mightiest creatures in the world. Adult dragons grow to Huge size (Large for crystal dragons) and they gain a +2 bonus to all ability scores, to a maximum of 25. The dragon’s maximum hit points increase by 30, and it gains a +1 bonus to AC.
+
+The Council employs adult dragons to conduct special missions, act as envoys for important diplomatic endeavors, and battle dangerous threats to dragon society -- even pitting them against the feared dragon slayers. Vassals settle in the territory of an adult dragon, if they are permitted to do so, and consider that dragon their lord, second only to the clan leadership.
+
+Adult dragons often control large swaths of territory and negotiate treaties with (or subjugate, in the case of the chromatics) local tribes of vassals or monsters. In this way, the dragon’s influence grows.
+
+An adult dragon cannot advance beyond 15th level in their chosen class. Experience may continue to accrue (with the Dungeon Master’s approval), but no adult dragon may advance to 16th level or beyond.
+
+Adult dragons remain so a very long time, and are not called to dragon sleep again until their seven hundredth year. The dragon will once again enter dragon sleep, emerging one year later as an ancient dragon.
+
+**Ancient**
+
+Unfathomably powerful compared to most creatures, the ancient wyrms are the greatest of dragonkind, for whom the passing centuries bring only greater might. Ancient dragons -- and only ancient dragons -- qualify for seats on the Council of Wyrms itself, shaping policy and peace for the generations ahead.
+
+**Ancient** dragons increase in size to Gargantuan (or Huge, for crystal dragons) and gain a +2 bonus to all ability scores, to a maximum of 30. Their maximum hit points increase by 50, and they gain a +2 bonus to AC.
+
+When ancient dragons are dispatched by the Council, it is for a truly monumental purpose, such as summoning clan heads for a moot or vanquishing a truly terrible opponent, such as a giant king and his army. Even ancient dragons have been taught caution when facing a force of human dragon slayers, however. The dragons’ arrogance was their downfall once before.
+
+Ancient dragons may advance up to 20th level in their chosen class. There is no category beyond ancient.
+
+\pagebreak
+
+# Treasure Hoards and Dragons
+
+Dragons hoard treasure because it pleases them to look at it, to collect it, and to feel it trickle between their claws and scales as they rest atop its glimmering beauty. More than that, though, a hoard is an integral part of its supernatural physiology, and a dragon that fails to accrue sufficient treasure for its hoard (or has its treasures stolen by thieves) finds itself stunted and weakened.
+
+In game terms, a dragon must have at least as many gold pieces of value in its hoard as it requires for experience points to reach its current level. This value is known as its bonded hoard. A hoard can only be counted if it is kept within the dragon’s current lair. A dragon cannot divide its bonded hoard between multiple lairs. Any additional treasure belongs to the dragon’s accumulating hoard.
+
+A dragon can convert treasure from accumulated to bonded when it completes a long rest in its lair. For that reason, most dragons return to their lairs after gaining a level or a large sum of treasure, resting and bonding with their hoard once more. The bonded hoard can never be larger than the minimum value required for the dragon to be its level.
+
+If a dragon loses any amount from its bonded hoard, it begins to weaken and may eventually die, if the hoard is not replaced or recovered. Dragons protect their hoards fiercely not only because it is a theft of their property, but because it can kill them.
+
+For as long as the dragon’s bonded hoard is depleted, it gains ever increasing exhaustion that cannot be removed by a long rest or any magical effect. The magnitude and rate of this exhaustion depends on how much of the hoard is missing.
+
+##### Hoard Losses
+| Hoard Missing  | Time Per Exhaustion Level |
+|:---:|:-----------:|
+| less than 25%  | One Year |
+|  25% to 50%  | One Month |
+|  50% to 75%  | One Week |
+|  75% or more | One Day |
+
+For example, Agkaras the silver dragon paladin is level three. Her bonded hoard must always contain 900 gold pieces worth of treasure, or she begins to suffer exhaustion. One day, a pack of ogres slaughters her vassal guards and makes off with 500 gold pieces worth of treasure before they are chased out. Each week, Agkaras suffers one level of exhaustion until she can replenish the lost value. After six weeks, if Agkaras has not staved off the loss somehow, she dies.
+
+\pagebreak
+
+# Feats
+
+Dragons have access to a small selection of racial feats. These feats broaden the dragon’s abilities and resources within the setting. 
+
+<br/><br/><br/>
+
+### Assume Vassal Form
+
+**Prerequisite**: You must be a gold, silver, or bronze dragon of adult or ancient age.
+
+**Special**: Traditionally, only gold, silver, and bronze dragons adopt these forms. With Dungeon Master permission, any dragon may take this feat.
+
+As an action, you may transform into a dwarf, elf, or gnome and remain in that form for up to one hour. You may return to dragon form as a bonus action on your turn. While transformed, you do not benefit from your natural Armor Class and cannot use your natural attacks or breath weapon, but you may cast spells or use class features, within their usual restrictions. You retain your ability scores in this form and may wield weapons or wear armor, but you are not proficient in either.
+
+The exact features of your vassal form are yours to determine and remain the same between uses of this ability, but many have a shock of hair color, skin tone, or iris hue that betrays their true nature. With Dungeon Master permission, you may be able to adopt other forms so long as they are humanoid and of Small or Medium size.
+
+Once you transform into a vassal form, you may not do so again until you complete a short rest.
+
+### Draconic Senses
+
+You harness the full potential of your keen dragon senses. You gain blindslight out to 20 feet, and your darkvision range increases to 120 feet.
+
+### Impenetrable Scales
+
+Your dragon scales racial trait improves, granting you an AC of 15. You cannot benefit from more than a +2 Dexterity modifier to your AC.
+
+### Improved Resilience
+
+Your Constitution score increases by 1 and you become immune to the effects and damage types to which your breed is resistant. For example, red dragons become immune to fire, while sapphire dragons become immune to the frightened, paralyzed, and restrained conditions.
+
+### Kindredbond
+
+The dragon adopts a kindredbond, which is a member of one of the three vassal ancestries (dwarf, elf, and gnome). This character has the statistics of a standard member of the ancestry and class the player chooses. The alignment of the kindredbond is always the same as its dragon, and the level of the kindredbond is always three less than the level of the dragon to which it is bonded.
+
+A kindredbond is tied to the dragon, usually acclimated to the dragon’s presence around the time of its hatching, until it is ready for be accepted by the dragon when it takes this feat. The dragon and the kindredbond participate in a ceremony overseen by a representative of the Council of Wyrms or the dragon’s clan, and at the end of the ceremony the two are bonded.
+
+This bond is metaphysical and carries no connotations other than servitude of the kindredbond to its dragon master. The dragon knows where its kindredbond is at all times, and can detect thoughts as per the spell on their kindredbond whenever it desires and from any distance. The two share a telepathic communication link while within 120 feet of one another.
+
+The kindredbond cannot knowingly commit an action that endangers its master, though the dragon feels no such compunction in turn. While the kindredbond can debate and communicate with the dragon, it generally acquiesces to any command that does not subject it to grievous bodily harm.
+
+In certain situations, the Dungeon Master may allow the player to take direct command of their kindredbond in order to go into locations where the dragon might not fit. The kindredbond follows the dragon into combat if so ordered, but the death of a kindredbond carries some risk for the dragon. Should a kindredbond die, even if it is later raised from death, the dragon suffers an immediate level of exhaustion that lasts for a period of one month and cannot be removed by any means.
+
+Further, allowing a kindredbond to be slain costs status among other dragons, even chromatic ones. After all, if a dragon cannot protect their possessions, do they deserve to have them?
+
+Should your kindredbond die due to old age or because you forsake or release them from this bond, you do not suffer this penalty. Instead, you may petition a dragon of authority (be it a Council of Wyrms representative or a figurehead from your clan) to grant you leave to adopt another kindredbond. This kindred may be a relative of your previous one (there are dynastic families of kindredbond raised for this purpose) or any other suitable kindred you select.
+
+Only dwarves, elves, and gnomes may typically be selected for kindredbond. With special Dungeon Master dispensation, you may consider other ancestries as your kindred, but it must be a humanoid creature of Small or Medium size. Attempting to adopt a human as your kindredbond will invite scorn from the Council and your clan, due to the enmity between humans and dragons.
+
+\pagebreak
+
+# Aging and Mortality
+
+Dragons may live for thousands of years if they avoid the dangers of the world around them. Though among the mightiest of creatures in existence, they are not invincible, despite what some red dragons will tell you. Marauding frost giants slaughter white dragons wholesale for hides and bones to make their armor, fire giants raid copper and red dragon hoards for treasure, and should the dragon slayers ever return, they will be an even greater threat.
+
+Nevertheless, there are dragons who make it to an extreme old age, whereupon their strength gives out at last. To determine this exact age, multiply the dragon’s Constitution score at ancient age by 100 for metallic dragons, 75 for gem dragons, or 50 for chromatic dragons, and add 1000.
+
+When a dragon reaches this age, it enters **dragon’s twilight**, marked by a steady, irreversible decline of strength, wits, and finally body. In the first year of twilight, the dragon must roll a Constitution saving throw against DC 10, increasing by 1 for each additional year that passes. On a failed saving throw, the dragon expires in the course of that year. Many chromatic clans tear their old ones apart to spare them the loss of dignity from this decline, and to divide up their hoards.
+
+There are, however, options to avoid this grim fate.
+
+**Guardianship** is chosen by many gem and metallic dragons. After the onset of twilight, a dragon that elects this method seeks out a secluded spot in the wilderness and transports their hoard to that location. The dragon enters a final torpor, melding with their hoard over the course of time to create a natural feature of the player’s choice.
+
+Some dragons abandon or distribute their hoards to worthy vassals and leave the Io’s Blood Isles for places unknown, never to return. Adventurers and treasure hunters suspect the existence of a remote **dragons’ graveyard** somewhere beyond the isles, holding a vast field of valuable dragon bones and glimmering scales.
+
+Others may complete quests of great import to the dragon gods, venturing beyond the Material Plane and wandering the multiverse. Even among dragons, this possibility is mere legend.
+
+Death need not be the end for the vilest wyrms, either. There exist terrible arcane formulae and rituals that transform a dragon of advanced age and considerable magical might into a **dracolich**. These rotting and grotesque monstrosities retain their insidious intellect and gain undead powers in accordance with their foul alteration. Should the Council learn of one’s existence, they summon dragons from across the Isles to hunt it down.
+
+\pagebreak
+
+# Aerial Combat
+
+With natural flight, dragons are not restricted to scrapping on the ground like common humanoids. In any situation where they can spread their wings, dragons use them to their advantage. This adds more than the usual degree of three-dimensional complexity to combat.
+
+Of course, in the world of the Council of Wyrms, most enemies plan accordingly. Every hoard or egg-raiding party equips itself with ranged weapons and nets to drag the wyrms back to the ground, where long pikes and sharp axes can do their work.
+
+Vassal troops learn combat formations that mitigate dragons’ aerial advantage, such as using turtle-shell formations with tower shields to provide cover against dragon breath. The Council cannot stop all of the periodic raids and blood feuds among clans, who use their vassal troops accordingly.
+
+A flying dragon does have risks to consider, most of which involve gravity and weather.
+
+### Actions in Flight
+
+There is one action that can be performed only while in flight.
+
+#### Dive
+Dive enables a flying creature to move up to five times its flight speed, but only if the dragon loses some of its altitude in accordance with the direction it moves. Furthermore, class abilities that allow a character to Dash as a bonus action also apply to Dive.
+
+For example, a young crystal dragon rogue with a fly speed of 80 enters a Dive in order to surprise a dragon slayer riding a griffon below it. The dragon moves up to 300 feet toward the target, but loses at least half that distance in altitude (but never more than the full distance of the dive).
+
+If there is insufficient altitude to complete the Dive, the dragon suffers half of the damage it would sustain for having fallen the same distance.
+
+## Conditions and Flight
+
+To remain aloft, dragons must be able to spread their wings and beat them unhindered. While players and Dungeon Masters should not concern themselves with mass, lift, and minimum speed to avoid stalling, a few guidelines represent these conditions.
+
+Firstly, a dragon must have a sufficient quantity of air beneath it to take off and remain flying. If a spell or other effect (such as a trip to an extraplanar realm) removes the air from a given space, a dragon cannot fly.
+
+Furthermore, a dragon must have enough space to keep its wings moving. Should the space around a dragon ever become insufficient, such as needing to squeeze through a place that is narrower than its space, the dragon begins to fall if they end their turn in the space and are not holding onto a surface or protrusion of some kind. For example, if a Large copper dragon (10’ by 10’ space) is forced to fly through a very narrow bend in a canyon (a 5’ space), it must grab onto something that can support its weight, or fall.
+
+If a dragon loses control of its wings or its fly speed becomes zero, it falls. Conditions that create this situation include the grappled, paralyzed, petrified, prone, and restrained conditions. If the condition ends before the dragon hits the ground, the dragon can catch itself and avoid a devastating crash, so long as it can use its fly speed.
+
+When a creature enters a free fall, it plummets 600 feet per round on its turn. For example, a blue dragon is 400 feet above the desert sands when a brass dragon wizard attacks. The brass dragon banks close and casts hold monster on the blue dragon, who fails its saving throw. On the blue dragon’s turn, it falls and hits the ground at full speed, suffering falling damage (20d6, for falling 200 or more feet).
+
+In the same example, if the blue dragon flies at 1000 feet, falls 600 feet on its turn, and at the end of the same turn succeeds its saving throw to end the hold monster spell, it does not crash. The dragon is no longer falling, and does not suffer falling damage when its turn comes around again (though it is only 400 feet above the ground now, at risk of being affected a second time).
+
+The grappled condition presents a special case, wherein both the grappler and its victim are in a clinch and fall together. In such situations, falling occurs on the victim’s turn, and not on the grapple initiator’s turn.
+
+### High Winds
+
+Flying creatures have a harder time negotiating the skies when subject to inclement weather, but larger creatures can tolerate higher wind speeds.
+
+A Small or smaller flyer treats all flight-based movement as difficult terrain in conditions where the wind exceeds 30 miles per hour (or 48 kph). Medium and Large flyers have a threshold of 50 mph (80 kph), and Huge and Gargantuan are unaffected by winds up to 75 mph (120 kph). No creature can fly in conditions in excess of twice its threshold, becoming subject to the violent gales and possibly entering a free fall. Creatures native to the Elemental Plane of Air, such as djinn and air elementals, ignore the effects of high winds.
+
+### Minimum Flight Speed
+
+An optional rule that some Dungeon Masters may want to use involves maintaining a minimum speed to avoid losing altitude. Dragons are huge, heavy creatures and despite their wingspan, they must maintain a forward momentum to avoid stalling.
+
+If your DM uses this optional rule, you must move at least half of your flight speed each turn to maintain your altitude. On any turn in which you fall to move this speed, you must succeed on a Strength (Athletics) check or begin to fall. The DC for this check is based on your age; 10 for wyrmling, 15 for young, 20 for adult, and 25 for ancient. The older a dragon is, the greater the mass it must keep aloft.
+
+\pagebreak
+
+# Designing Encounters
+
+Dragons are quite a bit stronger than standard characters of equivalent level. As such, encounters that would threaten dragons need to be adjusted accordingly. You may consider any encounter that is Hard for a group of standard characters as an Easy challenge for an equivalent group of dragons.
+
+It’s not as though dragons need fear many of the same dangers as their vassal servants, so what sorts of creatures pose enough threat to actually be willing to challenge a representative of dragonkind?
+
+Council territories are rife with bandits and lawless humanoids, but these brigands tend to limit their prey to vassals. Should entanglements with a dragon prove necessary, or should they happen upon a lone wyrmling, things can get ugly. Such opponents know well the sting of even a very young dragon’s breath weapon, and position themselves in such a way to minimize the dragon’s advantages.
+
+The single greatest disadvantage of a dragon is its reliance on being relatively close to their enemies. A dragon’s breath weapon may command impressive distance, and a spellcaster’s talents may also provide some ranged capability, but bandits and raiders know the best way to battle a dragon is from range. Hails of arrows, ample use of cover, and fighting withdrawals are how their ilk engage their far stronger opponents.
+
+As the size of a dragon grows, so too do their common enemies. Ogres, bugbears, and other large brutish enemies are rarely intimidated by young dragons and bring impressive physical prowess to bear against them. Singly, they may not be as dangerous, but no opponent is too proud to spurn the aid of allies to battle dragonkind.
+
+Once a dragon achieves adult age, their list of willing opponents grows thinner, but the enemies on that list are individually much more powerful. It is at this stage where dragons find themselves in conflict with equally dangerous creatures, such as giants in the north and south, genies in the desert islands of the Azure Sea, and desperate rogue dragons belonging to no clan. When smaller creatures are forced to do battle with dragons, they pit their champions against them or attack in great numbers. Even an adult dragon may be slowed or injured by a horde of blood-drunk gnolls in the midst of a pack frenzy.
+
+Ancient dragons face the greatest threats to their kind; dangers both terrestrial and cosmic, ranging from devious krakens in the deep seas to fierce giant kings and fey lords who compete for territory and influence on the world scale. However, there are few greater threats to ancient dragons than their own kind, and the political arena can be more savage than the most hate-fueled of grudges resulting in the Challenge of Claw and Wing.
+
+The echelon of dragon society also dictates the form of a dragon’s challenges. Dragons who act as Council stewards may find themselves at the bargaining table or in complicated webs of intrigue more than they do on the battlefield. Clan lordlings and those attempting to earn station among their own kind must also contest with rivals, assassins, and belligerent vassals who may not so readily accept their position.
+
+Other dragons are the arm of clan militaries to engage and scatter tribal humanoids or counter giant raiding parties. These dragons become hard-bitten warriors who are forged in the fires of battle and earn their hoards through the spoils of war.
+
+Some dragons are free-spirits, however, and form roving flights that travel from one territory to another. Though still beholden to their clans, these dragons come to the aid of embattled vassal settlements, rescue captured dragons, and root out wilderness dangers -- all with the express purpose of accumulating vast hoards to fuel their rise to power.
+
+
+
+
+\pagebreak
+
+# Supplementary Rules
+
+## Half-Dragons
+
+Dragons that are capable of adopting vassal forms are known to dally with those species. Sometimes, this is out of sheer boredom or curiosity, but rarely it may occur out of genuine mutual adoration. Whether a given dragon breed considers such activity repugnant varies from clan to clan; at best this is seen as a shameful indulgence to be kept secret, and at worst it is an abhorrent denigration of the pride and purity of dragonkind.
+
+Sometimes, offspring are born of these temporary unions. These half-dragons are not like the dragonborn of other campaign settings; they are usually sterile, often alien-looking or monstrous, and rarely find comfort in any but the most accepting clan territories. Rarely, their dragon parent will sponsor the half-dragon child in the same way a medieval lord would give a measure of status to their bastard, but a half-dragon has no claim to the lordship of a clan nor would they be welcome in the Council of Wyrms in any capacity.
+
+Nearly all half-dragons have a vassal parent that belongs to one of the standard vassal ancestries; that is, dwarf, elf, or gnome. Human half-dragons are almost unheard of and would be spurned by most humans or dragons. Half-dragons of other types may be possible, but would likewise be exceedingly rare.
+
+Again, half-dragons are not dragonborn; the latter could possibly be the eventual evolution of half-dragons breeding true with one another, but do not exist on the Io’s Blood Isles.
+
+## Half-Dragon Racial 
+
+### Characteristics
+
+**Ability Score Increase.** A half-dragon increases its ability scores based on its parentage, as outlined below.
+
+#### Dragon Breed Parent
+
+| Breed  | 	Ability Score Increase |
+|:---:|:-----------:|
+|  Black, Blue, Gold, Red, Sapphire, Silver  | 	+2 Strength |
+|  Amethyst, Bronze, Emerald, Topaz, White  | 	+2 Wisdom |
+|  Brass, Copper, Crystal, Green  | +2 Charisma |
+
+#### Vassal Ancestry Parent
+
+
+
+| Ancestry  | 	Ability Score Increase |
+|:---:|:-----------:|
+|  Dwarf  | +1 Constitution |
+|  Elf  | 	+1 Dexterity |
+|  Gnome  | +1 Intelligence |
+
+**Age.** Half-dragons are exceptionally long-lived. They mature at the same rate as their vassal parent, but double their maximum lifespan.
+
+**Alignment.** Half-dragons typically gravitate toward the alignment of their draconic parent, but the circumstances of their existence always weigh heavily and may drive them to the heights of heroism or the depravity of villainy.
+
+**Size.** A half-dragon is always Medium size. Half-dragons are about a foot taller on average than their vassal parents, making even gnomish half-dragons as tall and broad as dwarves.
+
+**Speed.** Your base speed is 30 feet.
+
+**Darkvision.** You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.
+
+**Dragon Breath.** A half-dragon can call upon the breath weapon of their dragon parent. They may not use this ability again until they complete a short rest. For chromatic and metallic half-dragons his attack is identical to the breath weapon of a dragonborn of the half-dragon’s dragon parent color. Half-dragons that belong to one of the gem dragon breeds use the following table.
+
+#### Half-Dragon Breath Weapon
+
+<div style='column-count:2'>
+
+| Breed  | Area of Effect |
+|:---:|:-----------:|
+|  Amethyst  | 30 ft range, 5 ft explosion |
+|  Crystal  | 15 ft cone |
+|  Emerald  | 15 ft cone |
+|  Sapphire  | 15 ft cone |
+|  Topaz  | 15 ft cone |
+
+| Damage  |
+|:---:|
+|  2d6 force  |
+|  1d6 slashing and 1d6 radiant  |
+|  2d6 thunder  |
+|  1d6 psychic and 1d6 thunder  |
+|  2d6 necrotic  |
+
+</div>
+
+A half-dragon also selects one of the following racial traits, which further determine its appearance and abilities.
+
+**Draconic Visage.** You are born of a vassal father and a dragon mother. Your body is covered in tough scales and your head is far more draconic than it is vassal, complete with horns, crests, and fangs. Your AC can never be worse than 13 + your Dexterity modifier, and you gain a +1 bonus to your Strength or Charisma score (in addition to any bonus from your draconic parentage).
+
+**Vassal Visage.** You are born of a vassal mother and a dragon father. You appear much like a regular representative of your vassal parent’s ancestry, but your hair and skin are tinged the color of your dragon parent’s scales and your eyes are large and draconic. If your vassal parent is an elf, you gain the elf’s Fey Ancestry quality. If they are dwarven, you gain the dwarf’s Dwarven Resilience quality. If they are gnomish, you gain the gnome’s Gnome Cunning quality.
+
+\pagebreak
+
+# Campaign Options
+
+## Stewards of the Council
+
+The most common way to provide a campaign template for a party is to have them hatched at the Council Aerie and raised as servants of the Council of Wyrms directly. This removes them from the immediacy of clan politics and keeps them together for their formative years while they learn about Council society firsthand.
+
+Clans will frequently send eggs to be hatched as wards of the Council. Sometimes this is due to the parents of the dragons in question being slain in battle or exiled for crimes, and the clan either cannot or will not take responsibility for them. For others, it is out of an agreement or responsibility to the Council, or perhaps as penance for some offense.
+
+The dragons typically serve the council until they reach the adult stage of their lives, at which time they are given the option to return to their clans or remain as a permanent servant of the Council of Wyrms. In both cases, much will be expected of the dragon, as the clan will seek to utilize their experience for their own needs, and the Council will trust the dragon will ever more important responsibilities.
+
+## Playing Vassal Characters
+
+While the Council of Wyrms setting was designed with dragons as player characters in mind, that doesn’t mean Dungeon Masters and their players should feel limited to dragons as the only playable creatures. Just as much fun could be had by a party of standard adventurers making their way through life in the shadow of the dragons.
+
+Dragon society is so elevated above the concerns of their vassals that an entire campaign of exploration and heroic activities can go on right under the snouts of the wyrms. Indeed, many dangers unnoticed by dragons that would threaten their way of life are handled, in secret, by their vassals.
+
+Playing under the rule of the Council has disadvantages, of course. All it takes is one obstructionist wyrm to issue an edict or level blame on a party of vassal adventurers, putting their activities in that clan territory under withering scrutiny. The very idea of vassals opposing their lords is anathema, and should a group of vassals prove the equal or better of an adult or ancient dragon, the Council itself may step in to intervene -- usually to step on the impertinent vassals.
+
+Vassals may also be a dragon’s kindredbond, and for a player that elects (or is chosen) to be one, they may safely ignore the restriction in level advancement placed upon kindred NPCs as listed under the feat entry. Kindred may be called upon to speak with their master’s voice at clan gatherings, or may even find themselves teamed up with the kindred of rival dragons to rescue that master.
+
+\columnbreak
+
+## Other Campaigns
+For something very different, you and your players may choose to play as human dragon slayers, freshly arrived from the isles to the far east, with dreams of glory and conquest over the arrogant dragons. These types of campaigns may be the most dangerous of all, for the humans are alone and pitted against the entirety of Council society -- including vassals who can root them out in places dragons cannot go.
+
+Players and Dungeon Masters might also enjoy playing as rogue dragons, banding together out of necessity and spurning (or exiled by) Council society. Perhaps they learned the truth of Great Io’s meddling and forced intervention in the kind’s history, or found the Council’s glacial attitude towards issues of importance irresponsible. Rogue dragons are usually hunted by Council society, and rogues that reach advanced age are quite rare.
+
+\pagebreak
+
+# A Vision of the Io’s Blood Isles
+
+The world presented to us by TSR for the Council of Wyrms setting is one where the maps are only given the lightest of details, the intricacies of its politics drawn only in pencil. We, as the players and Dungeon Masters, are free to fill in the gaps as we see fit, to tell the stories we want to tell and run the epic adventures we wish our players to experience.
+
+As relatively little is given as gospel, below is one vision of how the world may be fleshed out -- a sweeping tale of devious political maneuvering, of clandestine deals with the worst enemies of dragonkind, and the small beings that scamper underfoot. Big ideas are made bigger, cities expand to dimensions far beyond those of our world, and the contrast between the dragons’ civilization and the primeval wilderness beyond is sharper than the edge of a vorpal sword.
+
+Note that everything contained below is purely conjecture and homebrewed, and is inspired by the original vision of the Council of Wyrms setting. Rewrite, throw out, or modify as you see fit.
+
+## Dragon Clans
+
+Dragons of a particular breed are further grouped into clans, which are an admixture of political bodies with representation on the Council of Wyrms as well as allied families of wyrms. While the dragons themselves have little use for the contrivances that drive the societies of lesser creatures, they possess many of the same vices. Chief among these are a lust for power and wealth that even the most altruistic gold wyrm cannot deny.
+
+Clan territories are vast, as dragons -- even ones affiliated with one another -- are territorial and require great stretches of land in which to hunt and thrive. A region or city-state congested with a populace of both vassal ancestries and dragons quickly becomes an oppressive environment as the enormous beasts attempt to coexist in places not typically built for their kind.
+
+There are a total of thirty-two metallic clans, twenty-four gem clans, and thirty-two chromatic clans of varying power and influence on the Council. Many are old, so ancient as to have chronicled the formation of mountain ranges. Some are new, formed from defeated clans or clans that grew so large that they split so as to avoid internal feuding over territory and resources.
+
+While each clan of a particular dragon breed adheres to similar moral and ethical precepts, not every metallic clan is wholly benevolent and not every chromatic clan comprised of terrible overlords. As with governments elsewhere, clan politics and motivations are just not that simple.
+
+## Alignment
+For this vision of the Council of Wyrms, dragons are best left without strict alignments -- and if you and your players can accept it, playing without alignments at all. Good and evil in this version of the setting are not so clear cut, and hard choices must sometimes be made to ensure the survival of the clan -- or the destruction of another.
+
+## Dragon Culture and Lifestyle
+Dragons neither want nor need many of the luxuries common in the development of other civilizations. As a simplified example, most breeds do not feel significant discomfort from inclement or extreme weather and find most indoor environments claustrophobic, and so have never needed to devote their considerable mental faculties to the development of advanced architecture.
+
+Naturally, they support (perhaps a bit condescendingly) the needs of their vassal servants to do the same, but when the dragons control the funding and approval of such endeavors, technological advancement is understandably slow. In the thousands of years the Council and dragonkind has been in control of the isles, its vassals have seen little development beyond the confines of their late medieval and early Renaissance level societies.
+
+There is great development within those confines, however, and one should never underestimate the power that magic provides in replacing some of the creature comforts that more advanced societies enjoy. Furthermore, the spread of learning institutions, funded and governed by the dragons, is supported by all but the most tyrannical wyrms. Vassals and their dragon masters are generally better educated and enjoy a greater standard of living than those who exist outside of Council society.
+
+Dragons of Council society, regardless of their nation and clan, are distinct from their counterparts in other worlds of the multiverse. The dragon language has a well-developed written form, and Council dragons do not shy away from composing elaborate scriptures and treatises for distribution in libraries; these are, of course, copied down in smaller versions for consumption by vassals, who may find it quite troublesome to lift a seven hundred pound book bigger than themselves. Many dragons enjoy reading, and literature is traded amongst clans as vassals might trade in gold or grain.
+
+Perhaps affected by their time among their vassals, some dragons even enjoy wearing simple garments or jewelry. A sash across the throat, a gem-encrusted gold chain, a claw glittering with rings, or even wing piercings are not unheard of for a dragon to wear. This separates them, they claim, from clanless “rogue” dragons who are more rough around the edges and cannot manage such luxuries.
+
+The many centuries that dragons endure risk the onset of terrible ennui, and so some wyrms stave off their boredom with games, hunting, and other activities to sate their needs. Clan Jadress, for example, brings in much of its wealth by playing host to various gaming dens and the preparation of elaborate cuisines to fulfill any dragon’s appetites.
+
+\pagebreak
+
+Of course, few dragons will admit they can fall prey to such mortal afflictions as boredom. Dragons are nothing if not proud and so sure of themselves as the pinnacle of creation, so ordained by the Ninefold Dragon. A vassal that speaks out of turn about their benefactors can expect to be devoured in a red dragon clan, and at the very least be visited with scorn and condescension by a silver or gold clan. How could a dragon be anything other than right?
+
+On the subject of vassals, each clan and breed treats theirs differently. The culture of vassal sometimes affects dragon, and vice versa, so across the generations they often grow to reflect one another. The elves, dwarves, and gnomes that populate most of the isles alongside their masters have long recognized their place in the society, which even in the best of circumstances is as second class citizens.
+
+Naturally, metallic and gem clans treat their vassals better, but this is not always the case. Stories of gold wyrms who exile dissenters, even well-meaning ones, for the simple crime of flouting the dragons’ decrees for the greater good are not unknown. Likewise, even brutal red and white clans realize the value of their vassals, even if they are eminently expendable. Clan Vermillion, for example, has a surprising system of meritocracy where even a powerful vassal champion can achieve great status in the clan -- provided they can continue to maintain it against the constant stream of challengers.
+
+Regardless of clan or breed, vassals perform many of the tasks dragons cannot (or will not) perform. The claws of dragons, despite their relative dexterity, cannot weave nets or form pottery, or quarry stone. Emerald dragon philosophers correctly surmise that Council society, and even individual clans, simply cannot survive as they are now without the support, labor, and love (or fear) of their vassal servants.
+
+## The Human Menace
+In ages past, the dragon slayers came and wreaked havoc across the isles until the dragons banded together to fight them. Though they were defeated after decades of warfare, the scars the humans have left on dragonkind are psychologically profound. Humans are the one thing that dragons truly fear, and that is never easy to admit.
+
+Human tribes, long degenerated from their heyday as the dragon slayers of old, still dwell on the isles. These remnants of the abandoned or vanquished dragon slayer armies have no knowledge of their ancient and glorious past, and rarely rise above the status of nomads or savages. Occasionally, a charismatic human warlord will rise and raid vassal villages, and it is then that the dragons act to cull the herd.
+
+Despite this, humans have proven remarkably resilient and difficult to excise from the isles completely. Somewhere over the eastern horizon, the rest of their kind lives still. The dragons quietly offer prayers that they do not return.
+
+The land of the humans, should it ever be visited, is a monster-infested wilderness dotted with crumbling kingdoms and decadent city-states. Human civilization never truly recovered after the grand crusade of the dragon slayers, even thousands of years later -- tyrants and petty nations rise and fall, with society never advancing beyond a perpetual dark age.
+
+The ancient grandmasters of the dragon slayers live on, however, as monstrous undead lords in crumbling Gothic citadels on the fringes of known lands -- cursed by Great Io for performing the very duty he charged them with in days of yore, hated and feared by the rest of humanity for leading their kind to disaster in a failed crusade. Recruits are few and far between, usually criminals or other outcasts that find shelter from justice or the depredations of monsters in the dragon slayer citadels. The choice the grandmasters and their servants give them is simple: join the slayers, or join the dead.
+
+Their land has its own dragons, of a sort -- degenerate drakes, sinuous linnorms, and inbred hybrids exiled from the Io’s Blood Isles centuries or millennia before. The dragon slayers continue to hunt and slay these creatures, a mere shadow of what they once were, but begrudgingly allowed to exist for this service they provide to the rest of their kind.
+
+The dragon slayer grandmasters have not forgotten the Io’s Blood Isles or the dragons who dwell upon them. Even thousands of years later, they boil with hatred of the dragons and their manipulative creator, the Ninefold Dragon, who deceived them into being his tools and then abandoned them to suffering and undeath.
+
+## Council Aerie: The Center of Dragon Civilization
+The immense Council Aerie is a mystically-constructed city of lairs on the vast plains of All Clans Island. It is a neutral site where conflict is forbidden, save that initiated by the Challenge of Claw and Wing. Dwarfing some vassal cities in sheer size, the Aerie itself is lair to dozens of individual dragons. Many lair here only temporarily, as their duties to the Council ensure that they remain away from their own domains for long periods at a time. Others still, such as long-standing Council members, have mostly forsaken clan bonds and adopt positions of detached governance, so that they may better serve all dragons.
+
+The dragons are not the only inhabitants of the Council Aerie, however. Each dragon that lairs at the Aerie has an attache of vassals that attend its needs and run minor errands on behalf of their master. Furthermore, a diligent, hand-picked, and deeply scrutinized cadre of vassals dwells here with the single duty of guarding and tending to dragon eggs left in the Council’s care. Orphaned wyrmlings also fall under the purview of these tenders, who despite the assurances of the dragon lords of the Council, are not always incorruptible.
+
+Beyond these, visitors and delegates from myriad independent tribes and clans wander the honeycombed passages of the Council Aerie or the small trade villages surrounding it, trading news and jockeying for favor among the dragon lords. The Io’s Blood Isles are vast enough that even the grasping dragons do not have full control of all that dwell upon them, but the independents know who the real masters of the land are and do well to placate or ingratiate themselves with the Council and its clans.
+
+\pagebreak
+
+# The Dragon Nations
+Though the Council acts as a sort of binding entity to which all dragons nominally pay homage, the reality of the situation is that the Io’s Blood Isles are simply too massive and too spread out to suitably govern under such terms. Even in a society where the citizens of average standing can fly across vast distances in the span of a day, and where magic might allow even more expedient travel, the Council simply can’t be everywhere.
+
+Io’s divine mandate keeps the more credulous dragon lords in line, along with respect for the mediating presence of the Council and its stewards. However, each major territory of the isles is broken up into one or more smaller nations, which vary in influence and power as well as composition.
+
+## All Clans Island
+The Council Aerie and its environs remain neutral territory and are not technically part of any of the dragon nations. It is here that political disputes can be mediated without territorial claims interfering with matters of justice. While the Aerie is itself a populous city, numerous smaller settlements of vassals and tribal humanoids dot the island, most of which are free to govern themselves so long as they pay regular tribute to the dragons and do not interfere with the wyrms’ business.
+
+Unfortunately, this autonomy comes at a price; few ever come to the aid of the vassals outside of Council-established edicts and are prey for the tribal humanoids and each other. Visiting chromatic and gem dignitaries are also known for organizing cruel hunts where, like others would hunt foxes by running them down with dogs, elder dragons accompany younger ones as they stalk and slay errant humanoids and demihumans that do not fall under Council rule.
+
+The current Grand Custodian of the Council of Wyrms, the amethyst dragon Mykell, is the nominal leader of the Council of Wyrms. The position is, by tradition, always held by an amethyst dragon, though whether a given individual is of the quality required to hold the Council together has not always been consistent. The Grand Custodian is assisted by a small group of other dragon custodians, along with a large number of vassal retainers.
+
+Age is the deciding factor in the influence one can carry on the Council. There are two major governing bodies in the Council: the Platform of Wyrms and the Platform of Dominates. The former consists of any ancient dragon chosen as a representative of its clan, and each clan can appoint only one dragon to the role at a time. How each clan chooses its Platform of Wyrms representative is up to the individual clan (or in at least in the case of the Fireshore Republic, whether the dragon has been elected to the position of senator). Only ancients that are part of this body can cast votes brought up before the Council, which can affect whether a given clan is sanctioned or whether a new clan is recognized.
+
+Currently, there are only eighty-eight seats on the Platform of Wyrms, some of which are not filled; some clans either have not appointed a representative, or are still young enough that they have no dragons of ancient age to speak for them. In extremely rare cases, they may select another breed’s dignitary of ancient age to speak for them on their behalf. Dragons on the Platform of Wyrms are known as councilors, and should they serve for more than five hundred years, grand councilors. The latter title is merely ones of respect and distinction, nothing more.
+
+The much larger Platform of Dominates consists of any dragon that holds a rank of any significance within a given clan. While there has never been a call to enforce it, a little-known law prevents a given clan from allowing more than five dominates at a given Council meeting. Dominates cannot cast votes on the Council, but serve as a gallery of debate and influence that may drive the votes of the ancients on the Platform of Wyrms.
+
+Furthermore, while only dragons may represent a clan on the Platform of Wyrms, a dominate may instead be temporarily represented by an influential kindred or related dragon. The former find it difficult for their voices to be heard above the growls and susurruses of their superiors, but the rare respected kindred may rise to such prominence that their words carry the weight of their master.
+
+Council law is a tricky thing to enforce. With the collective power of one or more of the dragon nations, it would be difficult to bring a rebellious territory to heel under normal circumstances. As with all things draconic, however, circumstances are anything but normal, and the Council exercises its influence in three ways.
+
+Firstly, the divine mandate of Io hangs over the head of all dragons, and the Council remembers this fact. Were they to erupt in full-scale dragon war once more, the risk of the Ninefold Dragon visiting yet another calamity upon dragonkind is a very real possibility. Not all give due homage to the dragon pantheon, though, and secular dragon clans rarely give credence to the myths.
+
+To wit, the Council also maintains an extensive network of agents throughout the isles. The Eyes of the Council, as they are collectively known, consist of a well-trained cadre of vassal and dragon spies seeded throughout the isles with the primary mission of reporting discord or feuding directly to the Council stewards. These agents forswear any allegiance to the clan of their birth, in essence becoming “rogue” dragons by purest definition, but still beholden to the wishes of the Council. Bemused clan lords who become aware of the Eyes note that this gives the Council convenient plausible deniability as it pertains to these agents.
+
+Finally, the Council has an impressive standing army of some of the mightiest vassal troops and dragons on the Isles. Though sustained force projection is nearly impossible, many of these soldiers are trained to work together in disciplined teams which are the equal of many dragon lords. Some clans decry these teams as potential assassins used to silence dissent or deal with troublesome lords. Regrettably, they were used to do just that in the past by less scrupulous Grand Custodians.
+
+\pagebreak
+
+Despite these three tools, the Council still has its collective hands full moderating the disputes and governing the whole of dragon society. To that end, each region of the Io’s Blood Isles is considered its own “nation” and is given a reasonable amount of autonomy. Within these nations, examples of tribal councils, theocracies, republics, and even stranger forms of draconic governments can be found.
+
+## The Icy Reaches
+Far to the north of the rest of the isles, the frigid Icy Reaches are surrounded by choppy seas and icebergs that carve unprepared ships to pieces before they can reach the few trading ports with open access to the sea. Sixteen dragon clans are part of the Icy Reaches, a loose affiliation of dragons that band together for a single purpose: defense against the frost giants from the northwest.
+
+White dragons make up the bulk of dragon population here, and their vassals are a sullen lot. While the white dragons are restrained enough to avoid dining on their own servants, they do not treat them fairly or with more than a token amount of appreciation. Fortunately, most of their vassals avoid being outright slaves, but are expected to pay exhaustive tributes to their masters to avoid exile into the unforgiving arctic wastelands.
+
+The amethyst and crystal dragon clans temper the aggression of the white dragons and keep attention focused on the giants from the northwest. Agreements and truces, like the length of the days in this place, are bitterly short before the dragons return to their isolation.
+
+Of the dragon clans, four are of particular importance in the Icy Reaches. Clan Corum is ruled by Corum the Fifth, descendant of the clan’s founder, and its capital of Cold Stream Junction is a trade fortress as well as home to an academy of psionic arts whose like is unknown anywhere else in the isles. Dragons of any breed who wish to learn more about the powers of the mind travel here to train with Corum’s psychic masters.
+
+Crystal clans Sparkle and Moonlight are capricious domains of carved ice, with dragon lords of such similar, playful mein that they might as well be siblings. Glimmerglow, the patriarch of Clan Moonlight, visits frequently with the ancient Luminus of Clan Sparkle. Together they develop strategies to confound frost giant raiders that frequent the Icy Reaches and are responsible for designing deadly traps and ambushes to break their advance.
+
+Clan Desolate is the largest and most fearsome of the white dragon clans in the Icy Reaches, and its lord, the behemoth Winterwing, is of such size and age that he finds it difficult to leave his lair at times. Winterwing’s holdings and hoard are the envy of the other white dragon clans, who periodically raid Desolate holdings in an attempt to draw the old wyrm out to be slaughtered by packs of predatory dragons waiting in the wastelands. Winterwing may not be a scholar, but he is a cunning warrior and knows that the smaller wyrms cannot hope to defeat him so long as he remains ensconced in his clan’s capital city, a fortress of ice and iron that is constructed over his lair.
+
+Trade is a difficult affair for the Icy Reaches, but it does transpire. Dragon whalers haul enormous carcasses to shore to be butchered by vassals for meat, bone, and ambergris, the latter of which is sent south to make luxuries that the southern clans enjoy. Thick hides from polar owlbears or mammoths are similarly popular elsewhere, and gemstones mined from the Mountains of Dawn make up the rest of the Icy Reaches’ exports.
+
+### Clans of the Icy Reaches
+The following clans make up the Icy Reaches.
+
+**Amethyst:** Corum, Regalen
+
+**Crystal:** Coldshard, Luckwing, Moonlight, Sparkle, Starlight, Sunlight
+
+**White:** Chillblood, Coldfire, Desolate, Everwinter, Frostwind, Glare, Iceteeth, Illsnow
+
+## The Exaurdon League
+Let not the temperate climes, rolling hills, and gentle forests fool you; the Exaurdon League is a dangerous wilderness, and the civilization afforded by the federation of dragon clans keeps devastating forces at bay. Glittering cities of gold and jade gleam in the daylight hours as beacons of law and justice, but as night falls even they give way to the fearsome monsters beyond.
+
+Long have the gold and green clans of Exaurdon Isle lived in unwary truce with one another, occasionally clashing over minor territorial or resource disputes. When the lord of Clan Exaurdon, Magnern the Gold, proposed truces to deal with the island’s indigenous dangers, the other clans on the island were swayed by the lord’s words and promise of peaceful coexistence. The two topaz clans on the isle, Deepwater and Seaspray, pay lip service to this arrangement if only to keep the other dragon breeds from pestering them. Despite their misgivings, the metallic, gem, and chromatic dragons of these clans understand that only through their treaties and mutual defense pacts can they endure against a savage wilderness that even the dragons cannot truly tame.
+
+The forests of Exaurdon Isle’s interior are home to entities as old as the dragons themselves, seemingly waiting for the wyrms upon their initial arrival to the island chain. These fey creatures are hostile to dragons, denying parley and assaulting parties of vassals sent to flush them out. In the woods beyond clan territory, safety cannot be guaranteed even in flight. Swarms of faerie warriors on gossamer-winged giant insects or astride enormous hawks have been known to assail and entangle flying dragons, heedless of the danger to themselves as they stab and gnaw at their quarry during their fatal fall.
+
+The leaders of these fey, known collectively as the Wild Gods, are demipowers of significant strength and uncertain number. Possessing chaotic forms and a mercurial demeanor, the Wild Gods incite the raw powers of natural world to challenge the dragons at their own borders. Clashes between vassal troops and marauding fey are common. Only during rare assaults by enormous beasts -- mundane animals enchanted to grow to titanic size -- do the dragons take the field to even the odds. Many are the stories of glorious and savage combat between an adult dragon and a gargantuan wolf, badger, or serpent.
+
+\pagebreak
+
+Sea travel is safe enough, and ships frequent the calm waters around the island’s shores to reach the other major clan holdings. Each clan is known for its excellence in a pursuit, even if it is not the clan’s sole focus. The dragons of Clan Justice in the City of Law are unparalleled scholars of Council legal matters, rivaling even the amethyst clans for their sheer dedication to the letter of Io’s law. In the City of Gold, the dragons of Clan Exaurdon staff the finest universities in the Io’s Blood Isles, where all are welcome to partake of the gifts of academia free of cost.
+
+The green dragon clans are less free with their gifts, but not short on their dedication to order. In Twin Tree, Clan Treesplitter’s druids maintain glyphed henges that work against the untamed power of the fey and their Wild Gods. The fabled Archdruid of the green dragons, nicknamed “Elfbane” for his thwarting of the fey lords, oversees a rigid hierarchy of druids from the lowly novitiates up to the wandering hierophants that traverse the untamed wilderness alone as they seek ways to placate or subdue the Wild Gods.
+
+Not to be left out of the proceedings, the topaz clans quietly and begrudgingly trade their vast wealth of pearls taken from giant stone clams for goods they require from the golds and greens. Their independent streak sometimes leaves the topaz dragons slow to react to fey attacks or ask for help from their ostensible allies.
+
+### Clans of the Exaurdon League
+The following clans comrpise the Exaurdon League.
+
+**Green:** Foulgrove, Treesplitter
+
+**Gold:** Exaurdon, Baraster, Justice
+
+**Topaz:** Deepwater, Seaspray
+
+## The Starshine Principalities
+Dragons have good cause to be devout; it is no mere myth that Great Io once visited calamity upon his brood for the crime of slaughtering one another. Religion is a private affair for most dragons, and small enclaves of worshipers and priests are usually all that thrive in a given clan territory. For most, it is enough to recognize that the distant pantheon of dragon gods exists, and that is all.
+
+Starshine is the sole territory in the Io’s Blood Isles where worship of the dragon gods is more organized. Magnificent temples constructed by devout vassal servants extol the virtues of the divine dragons, and none are greater than Great Io himself. Though the vassals are not themselves dragons, they often clothe themselves in cloaks cut like wings, circlets with horn-like protrusions, and tunics woven with shed scales while within the walls of these immense temples.
+
+The island is home to the Starratiel Clan, whose legacy includes the great wyrm of the same name who was instrumental in the creation of Council society. The amethyst dragons are pious and wise in the ways of the gods, and their devotion has inspired the green and gold clans of the island to take up similar paths. The majority of clan lords are priests of one or more dragon gods, and they are unified by that faith in Great Io and his children.
+
+As such, the Starshine Principalities are stalwart proponents of the Council of Wyrms and have significant strength of arms to come to its defense should dangers or dissent arise. Culturally, the clans are organized in a traditional manner, with a dragon lord at the top of the clan hierarchy, with dominates beneath it, common dragons below that, and vassals at the bottom. Vassals do not always enjoy the fruits of a clan’s prosperity, as with all traditional dragon clans, the dragons themselves earn the largest share.
+
+There are a few exceptions to this otherwise reverent society of loosely-allied clans. Clan Jadress breaks from its fellow green dragons and maintains a well-developed industry of vice, gambling, and hedonism. Its borders are open to dragons of all clans, whose agents (dragon and vassal alike) visit Jadress’s subterranean dens for gossip, secrets, and indulgence. The vassals of Clan Jadress are wealthy as a result, much more so than those of other Starshine clans.
+
+Further, the topaz clans are outright antagonistic towards the others for their proselytizing, but fall short of brawling with the other clans’ preachers. Dryair and Pazus are more favorably inclined towards Clan Jadress than they are towards fellow gem dragon clans Majyst and Starratiel, not only because they needn’t endure the prattling of clerics, but also for Jadress’s unique services and discretion.
+
+A greater tragedy, and one that is of far more danger to the clans of Starshine Isle than lapsed devotion, is the existence of vile cabals that worship Faluzure, the dragons’ death god. Both dragon and vassal have been swayed by the words of this gruesome cult, becoming obsessed with death and existence beyond it.
+
+It is troubling to the clan lords that their divine visions do not afford them insight into the leaders or the pervasiveness of this cult. Whispers and speculation point to one or more dracoliches as the ringleaders of this death-cult -- but the Council demands proof before they will devote precious resources to intervene.
+
+### Clans of the Starshine Principalities
+The Starshrine Principalities are home to these clans.
+
+**Amethyst:** Majyst, Starratiel
+
+**Green:** Darkcloud, Evilwood, Jadress, Veriste
+
+**Gold:** Resplendence, Sunblaze, Triumph
+
+**Topaz:** Dryair, Pazus
+
+## The Azure Sea Compact
+A wild, dangerous oceanic realm, the Azure Sea Compact is the name given both to the nation and the articles that keep the clans from overt feuds. Though the handful of metallic clans outnumber, ever-so-slightly, the chromatic dragons on these isles, the blue clans collectively rule the Azure Sea with a firm claw.
+
+The Azure Sea’s isles are almost universally hot and dry, kept so by the weather currents that push storms past the islands rather than over them. As such, the island interiors rarely see any rain whatsoever, which suits the dragons just fine. Oases and mountain springs help provide the vassal of the clans with drinking water, so the Azure Sea is not completely uninhabitable by non-dragons -- it simply suits the clans that dwell there better than most.
+
+\pagebreak
+
+The lords of the blue clans of Clearsky, Lightningwing, Sandshaper, and Swiftclaw organized the Compact to better combat the dangers of the deserts and surrounding seas. The dragons are beset by hordes of marauding gnolls and their genie overlords from the deep wastes and the waterways are rife with sea serpents and sahuagin that prey on trade ships and seagoing wyrms. When it became clear that the blues would benefit from the inclusion of the metallic clans (as well as demonstrate their obvious wisdom and magnanimity), the offer to join was extended to them.
+
+The fiercely independent copper and brass clans, with their nomadic vassal tribes, enjoy the mutual protection afforded by the Compact but chafe against the tariffs and edicts that the blue clan lords pronounce every few years. Debates at the Palace of the Bright Sun are as heated as the midday desert, and the metallics fall just short of outright fighting with the blues.
+
+That is not to say the blue clans are united in their regime, and the territorial wyrms bicker over trading rights and which of them is responsible for dealing with a particular threat. Gems, spices, and other luxuries pour through the markets of their desert cities, and each blue lord vies for dominance over the others by hoarding the most wealth and the most influence.
+
+### Clans of the Azure Sea Compact
+The isles of the Azure Sea Compact are home to these nine clans.
+
+**Blue:** Clearsky, Lightningwing, Sandshaper, Swiftclaw
+
+**Brass:** Dewfeast, Hotwind, Sandtail
+
+**Copper:** Cutharn, Rockclaw
+
+## The Burning Isles
+As the group of islands with the largest concentration of dragonkind, the Burning Isles are a constant hotbed of intrigue, proxy wars, and conspiracies that range from the mundane to the staggeringly complicated (in ways that only dragons can make things). Dragons of polar opposite breeds find themselves forced to work and conspire together against the other feudal domains of dragon lords with greater influence on the Council.
+
+The undisputed master of the Burning Isles is the ancient and terrible Firebrand the Red of Clan Bloodtide. A domineering schemer, he holds most of the other clans in the Burning Isles under some manner of threat, blackmail, or largesse. Like most of his breed, Firebrand desires power above all else, but goes about it in a different manner than other, less-careful red dragons.
+
+Instead of immolating cities and dominating lesser dragons through brute force, Firebrand has constructed a vast network of trade routes, treaties, and blackmail with the other clans of the Burning Isles. Exotic goods of all kinds flow in and out of the streets of the other cities in the region, from delectable jungle fruits desired by vassals to highly addictive narcotics that even dragons crave.
+
+Whenever a clan falls out of line of the red dragon lord’s plans, Firebrand merely lifts one claw holding down another clan that would just as soon battle its rival for better status in the region. The problem typically corrects itself in short order, as all of the clans are interested in maintaining the status quo, at least on the surface.
+
+For all that everyone in the Burning Isles feuds with each other, they hate Firebrand more, but the dragon and his ilk are so powerful that it would take the concerted efforts of three or more clans to stand a chance against Clan Bloodtide’s fearsome power. In particular, the red clan maintains an order of powerful elementalist wizards, the Cabal of the Unquiet Earth, comprised of both dragons and favored kindred with impressive magical aptitude. A small army of elementals is at the Cabal’s command; primarily to hold back the fury of the active volcano upon which Malice, Clan Bloodtide’s capital, resides in all of its terrible majesty. It would be trivial to turn these elementals against would-be invaders, or unleash the full destructive power of the volcano upon the same.
+
+The other clans of this region function in a manner similar to the baronies and duchies of medieval societies; the dragon lord is the autocratic ruling body, who empowers a select few dragons as its dominates to mete out justice, supply it with tribute, and oversee the vassals that populate clan territory. Alliances with other clans are common, but often short-lived as Firebrand’s machinations do not allow them to remain allies for long before a scandal or small-scale raid (blamed on the other party, of course) drives them apart.
+
+Unique within these domains is the black dragon clan of Darkmoon, a small and winnowing family of dragons numbering no more than seventy or eighty individuals and their few thousand oppressed vassals. The clan’s lord, Deathstream, is a wyrm recently accorded the status of ancient whose responsibility it is to bring the clan back to greatness.
+
+Unfortunately, Firebrand knows that Deathstream is a weak and vacillating ruler, and so does his part to sabotage the ambitions of Clan Darkmoon. What Firebrand does not know (and indeed, very few of even Deathstream’s court know) is that Deathstream has acquired a new, secret ally -- the red dracolich bearing the moniker “Infernus”.
+
+This eldritch, undead warlock was slain at the claws of Baraster, the gold dragon founder of Clan Baraster, many thousands of years ago. The insidious red dragon had a contingency plan, as well as a small cult of followers, which enabled him to rise again in lich form. Infernus is a powerful infernal pact warlock who has curried the favor of vile demon lords in exchange for his sorcerous might, and has designs of conquest over the isles.
+
+First, he will use Darkmoon to broaden his power-base; already, a majority of the Darkmoon vassal populace has taken up worship of myriad minor gods that are, in fact, demonic generals. In time, Infernus hopes to open gateways to bring through a demonic army of conquest and march across the face of the world.
+
+### Clans of the Burning Isles
+Many clans call the Burning Isles home.
+
+**Black:** Darkmoon, Lurker, Nighthunt
+
+**Blue:** Jagtail, Sharpbolt, Swiftclaw
+
+**Brass:** Blisterclaw, Drywing, Dustspinner, Sungazer
+
+**Bronze:** Battlewing, Seaview
+
+**Copper:** Clawstrike, Highjump, Sunleap
+
+**Emerald:** Flamestrider, Maragus
+
+**Red:** Bloodtide, Firetongue
+
+**Sapphire:** Battlecry, Boldtail
+
+**Silver:** Coldwing
+
+\pagebreak
+
+## The Fireshore Republic
+Among the clannish society of the Council of Wyrms, the Fireshore Republic is a true anomaly. The dragons who dwell here pay homage to the Council and its mandates, but operates in such a fashion that it can be considered a truly stand-alone nation. In fact, that’s exactly how its constituent clans view themselves.
+
+Fireshore lacks the population density of the Burning Isles, but has more settled territory and much greater autonomy in comparison to its sister nation. Each dragon clan and breed appoints a representative on the Council of Wyrms, as normal, but that councilor also has the rank of senator on Fireshore. The governing body of the Republic is the Senate, where dragon senators debate policy on behalf of their clan lords.
+
+The dragons of Fireshore consider themselves the most societally advanced of the Council nations -- indeed, as the natural evolution and refinement of the Council of Wyrms itself into a more enlightened and coordinated body. There is, for the most part, a strong push for equality in the clans and their vassals, and relatively open borders between clan territories mean trade and cultural mixing are the expected norm. Even the surly chromatic clans regularly renew their commitment to the Republic through the contribution of gold and troops to support Fireshore’s robust military.
+
+Clan Summit, the sole silver dragon clan on Fireshore, serves as the capital territory of the Republic. The diligent silvers maintain law and order there, which is not always an easy task when visiting senators from former rival clans such as Magma and Scorch arrive and throw their literal and figurative weight around.
+
+With that in mind, the Republic is far from free of feuding or bias. Fierce disagreements between the bronze clans and the red clans over the interpretation of the Republic’s laws are common, and it is the firm claw of the militant and influential sapphire clans that keep both in line. For example, as written, the Republic’s laws do not explicitly disallow the enslavement of vassal species, only that of dragons. Red and black clans do not attempt to hide the fact that they have complete ownership of those vassals pledged to their clans, in exchange for protection and a modest share of the clan’s prosperity.
+
+Senators will often deadlock on issues due to the even number of clans. To prevent this, the Republic also has a First Minister that is elected once every fifty years from among the current presiding lords of the constituent clans. The First Minister must bow to the laws and policies imposed upon them by the senators, but they serve as a tie-breaker vote in situations where the Senate becomes deadlocked.
+
+The Council stewards chafe at the existence of the Republic and its usurpation of draconic governance in that region, but so long as the Republic owes its ultimate loyalty to the Council of Wyrms and Io’s divine mandate, conflicts will remain political rather than military. Still, when a Council edict is “put to vote” in the Senate, as though there were some question of whether it should be followed, draconic pride is put to the ultimate test.
+
+\columnbreak
+
+### Clans of the Fireshore Republic
+The clans listed below thrive in the Fireshore Republic.
+
+**Black:** Boghold, Mire
+
+**Bronze:** Cliffwalker, Tempest, Waveflier
+
+**Copper:** Becubard, Fastwing
+
+**Emerald:** Firelake, Sharpwail, Sonis
+
+**Red:** Magma, Scorch
+
+**Sapphire:** Glitterwing, Phlare, Warclaw
+
+**Silver:** Summit
+
+## Giantbane Archipelago
+With the coming of dawn, the temperature rises sharply on the humid and volcanic Giantbane Archipelago. Over the horizon to the south and west, the masts of mighty ships can be seen, flying flags of red, black, and orange -- the colors of the fire giants and their allies. A scout dragon wheels in the sky, their keen eyes spotting the ships from miles off. On quick wings they soar back to the safety of the shoreline and alight on carved stone spires rising from the surf.
+
+The dragon roars into the coiled tunnels through the basaltic columns, and the sound is magnified many times over. The call to battle is sounded, and within minutes dragon and giant clash amidst the churning waves. The price for allowing a ship to land is too dire to allow.
+
+The Giantbane dragons are clans in a constant state of war. The fire giants to the southwest are far more organized and persistent than their counterparts, the frost giants, to the far north. Monthly raids, which become weekly in the steaming summer season, spur the giants to assault seaside villages and port cities for plunder. Though relatively few clans reside on the Archipelago, these few are battle-hardened and committed to their role as the shield that protects the flank of the Council of Wyrms.
+
+Not once have the Giantbane dragons petitioned the Council for aid in this self-appointed charge.
+
+The Archipelago cannot rightly be called a true dragon nation when it is compared to larger and more organized territories such as Fireshore or the Burning Isles, and its clans are devoted entirely to the Council of Wyrms. However, the clans are given free reign to determine the details of their defense strategies, though each will disagree on how to accomplish their goals.
+
+The savage and violent dragons of Clan Vermillion constantly push and bully the other regional clans into staging counterattacks and slaughtering fire giant raiding parties to a man (or giant, as the case may be). The reserved silver dragons, who outnumber the other clans of the island, are no less stalwart but prefer to let raiders escape to spread word of the dragons’ prowess.
+
+The black and copper clans are more devious, luring giant raiding parties ashore to be slaughtered by cunning ambushes and traps sprung by vassal servants. It is a riskier gamble; at sea, the giants are at a disadvantage since they cannot easily find cover from marauding dragons and will readily sink to the bottom of the ocean if sent overboard. On land, the giants organize themselves into tight, shield-protected formations with enormous arbalests firing hooked and tethered arrows -- however, these formations are far more vulnerable to the black dragons’ quagmire clan territories or the tight canyons of the copper dragons.
+
+\pagebreak
+
+Life is brutal and short even for dragons on the Archipelago, but any dragon seeking glory in battle against implacable and relentless foes knows well that there is no better proving ground.
+
+### Clans of the Giantbane Archipelago
+Endless wars against the giants are fought by these clans.
+
+**Black:** Blackwater, Nightshriek
+
+**Copper:** Stoneproud
+
+**Red:** Vermillion
+
+**Silver:** Brightscale, Cloudwalker, Fog, Pinnacle
+
+\pagebreak
+
+# Dragon Equipment
+
+Unlike their vassals, dragons cannot make use of most typical equipment, mundane or magical, that is available in core rulebooks. That is not to say these items do not exist -- kindred and other vassals make use of them all the time, and the pervasiveness of magic and magical items may indeed be higher in your campaign.
+
+Dragons do make use of specialized equipment and have developed magical items to suit their impressive size and power, though these are typically quite rare. Of the existing magical items, dragons can make use of amulets, rings, and bracers, as well as rods, staves, and wands. Furthermore, most wondrous items work as expected.
+
+Regrettably, dragons cannot make use of armor, boots, cloaks, gloves, or shields of any kind.
+
+## Weapons
+There are several reasons a dragon might utilize crafted armaments, not the least of which is for the purposes of enchantment. Dragons have as much difficulty causing harm to creatures that require magical weapons to penetrate their natural resistance as their vassals do, and not every dragon can cast the necessary spells to overcome this detriment.
+
+Intimidation is another factor; a dragon may well be terrifying when angered, but other dragons may not be so easily cowed. A dragon bristling with spiky plates or barbed wing spurs, however, might give others pause before engaging.
+
+Such weapons must be custom-crafted for the dragon in question to be made suitable for its age and size. The time and expense in creating standard versions of these armaments is not to be overlooked for young dragons, though elder wyrms rarely have such concerns with their eternal patience and vast wealth.
+
+### Claw Gauntlets
+The claw gauntlet is a gruesome, barbed instrument that is fastened around the claws of a dragon. They are almost always made in pairs. Claw gauntlets have a fair amount of articulation, but are heavy and do not allow the dragon the full range of its manual dexterity.
+
+A dragon wearing claw gauntlets cannot cast spells that require somatic components, and is at disadvantage on Dexterity checks that involve use of their front claws. Their primary advantage is in holding enchantments to allow the dragon to harm creatures immune to their normal attacks.
+
+### Maw Cage
+The red dragons of the city of Malice supervise the creation of these fearsome metal masks that encase the draconic head and are held in place by a mechanism not unlike a bit and bridle. While they hardly require the protection, dragons wearing a maw cage typically wear them in gladiatorial combat or the Challenge of Claw and Wing to protect their eyes and other fragile features from injury.
+
+A maw cage can also be enchanted to allow a dragon's bite to behave as a magical weapon for purposes of overcoming resistances and immunities to normal attacks.
+
+### Spiked Plates
+Affixed to the body of a dragon via straps and chains, spiked plates are intimidating, but also allow the dragon to inflict terrible wounds on creatures that attempt to engage in a grapple. Whenever a dragon wearing spiked plates grapples or is grappled by a creature, they may use their bonus action to make a single melee attack against the grappler. If this attack hits, it deals piercing damage equal to the dragon’s bite attack.
+
+Spiked plates do not increase the dragon’s AC, as they are not effective armor compared to their natural defenses.
+
+### Tail Star
+Developed by the dragons of the Giantbane Archipelago to better smash the longships of fire giants to kindling, the tail star is an enormous, weighted knob of studs, spikes, or razors that fits like a cap on the dragon’s tail.
+
+A tail star can be crafted to cause bludgeoning, piercing, or slashing damage. This may render the weapon more useful against certain kinds of enemies, and also allows the dragon’s tail attacks to strike as a magical weapon if the tail star is enchanted.
+
+### Wing Spur
+Once a symbol of status, golden wing spurs were worn by dragon clan lords to show off their wealth. In time, enterprising sapphire dragons turned these into weapons of war, forged of tough steel and able to open gaping wounds in the flesh of enemies.
+
+Wing spurs convert the damage caused by the wing attacks into slashing damage, and allow these attacks to be enchanted by magic normally.
+
+\pagebreak
+
+# Io's Blood Isles Bestiary
+
+## Dragon Slayers
+This example of an accomplished dragon slayer is a throwback to the time where they were the feared, implacable foe of all dragonkind.
+
+Honing their skills against the beasts of their treacherous homeland and schooled in the ancient techniques of dragon-killing, this slayer has reached the pinnacle of their art and was sent across the sea to hunt and slay dragons. What they lack in ranged capability, they make up for in cunning and patience.
+
+___
+___
+> ## Dragon Slayer Champion
+>*Medium humanoid (human), chaotic neutral*
+> ___
+> - **Armor Class** 19 (plate armor)
+> - **Hit Points** 212 (25d8+ 100)
+> - **Speed** 30 ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|20 (+5)|13 (+1)|18 (+4)|10 (+0)|12 (+1)|12 (+1)|
+>___
+> - **Saving Throws** Str +10, Dex +6
+> - **Skills** Athletics +10, Survival +6, Intimidation +6
+> - **Senses** passive Perception 11
+> - **Languages** Common, Draconic
+> - **Challenge** 16 (15000 XP)
+> ___
+>
+> ***Death Blow.*** The dragon slayer champion makes a single melee attack against any dragon in lieu of its multiattack. If this attack hits, it is an automatic critical hit and the dragon slayer champion may expend remaining hit points to increase its damage by a similar amount. The dragon slayer may not spend more than 75 hit points, or however many hit points it has remaining, to power this ability.
+>
+> ***Evasion.*** The dragon slayer champion suffers only half damage from effects that require a Dexterity saving throw, and suffer no damage on a successful save.
+>
+> ***Wyrmtracker.*** The dragon slayer champion has advantage on Wisdom (Survival) checks made to identify or track dragons, or to determine the abilities of a given dragon.
+>
+> ### Actions
+> ***Multiattack.*** The Dragon Slayer Champion makes three Greatsword attacks.
+>
+> ***Greatsword.*** *Melee* Weapon Attack: +10 to hit, reach 5ft., one target. Hit: 18 (4d6 + 4) slashing damage.
+>
+> ***Tethered Harpoon.*** *Ranged Weapon* Attack: +10 to hit, range 20/60 ft., one target. Hit: 14 (3d6 + 4) piercing damage. DC 18 Strength saving throw or be knocked prone and pulled 10 feet closer to the dragon slayer champion.
+>
+> ### Legendary Actions
+> The dragon slayer champion can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon slayer champion regains spent legendary actions at the start of its turn.
+>
+> ***Chain Attack.*** The dragon slayer champion makes one Greatsword attack against a target in range.
+>
+> ***Fearless.*** The dragon slayer may end the effect of a dragon's Frightening Presence upon itself.
+>
+> ***Aggressive Surge.*** The dragon slayer champion moves up to their speed.
+
+\pagebreak
+
+## Ogre Egg Hunter
+This ogre is an experienced trapper of wyrmling dragons for sale on illicit markets, to be used as slave labor for giants or butchered for meat. It is just smart enough to realize that it needs to capture a young dragon alive, and will strike with that intent.
+
+___
+> ## Ogre Egg Hunter
+>*Large giant, chaotic evil*
+> ___
+> - **Armor Class** 17 (half-plate armor)
+> - **Hit Points** 102 (12d10 + 36)
+> - **Speed** 40ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|20 (+5)|8 (-1)|16 (+3)|6 (-2)|7 (-2)|7 (-2)|
+>___
+> - **Skills** Athletics +8
+> - **Senses** passive Perception 8
+> - **Languages** Draconic, Giant
+> - **Challenge** 5 (1800 XP)
+> ___
+> ***Hooked Net.*** The ogre egg hunter throws a hooked net up to 50 feet, which affects a 15 foot cube. Any creature in the area of effect must succeed at a DC 15 Dexterity save or become restrained. At the beginning of the turn of any victim restrained by the net, they suffer 7 (2d6) piercing damage. The victim may attempt another saving throw at the end of their turn, with success resulting in breaking free of the net. The net may also be destroyed by inflicting 10 points of slashing damage to it.
+> ___
+>
+> ### Actions
+> ***Multiattack.*** The ogre egg hnter makes 2 iron truncheon attacks.
+>
+> ***Iron Truncheon.*** *Melee :* Weapon Attack: +8 to hit, reach 5ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.
+>
+> ***Javelin.*** *Ranged Weapon* Attack: +8 to hit, reach 5ft., one target. Hit: 12 (2d6 + 5) piercing damage.
+
+\columnbreak
+
+## Vassal
+Vassals take many forms, though most of the Council prefers the use of dwarf, elf, or gnome vassals. Others are not unheard of, but these three ancestries are historically the most populous and most widely accepted.
+
+As such, vassals fulfill a variety of roles, from tending dragon eggs to acting as spies on behalf of the dragon clan.
+
+### Clan Jadress Concierge
+The green dragons of Clan Jadress know that in order to make their guests feel most comfortable, they must have the meekest and most unassuming caretakers to help plan the details of their stay. These gnomes are hand picked by the dragon lord, Jadress herself, to supply those needs while also collecting any information of import.
+
+___
+> ## Clan Jadress Concierge
+>*Small humanoid (gnome), lawful neutral*
+> ___
+> - **Armor Class** 15 (studded leather armor)
+> - **Hit Points**  22 (5d8)
+> - **Speed** 25ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|8 (-1)|16 (+3)|10 (+0)|14 (+2)|12 (+1)|13 (+1)|
+>___
+> - **Saving Throws** Dex +5, Int +4
+> - **Skills** Investigation +4, Sleight of Hand +5, Stealth +5
+> - **Senses** darkvision 60 ft., passive Perception 11
+> - **Languages** Draconic, Gnomish, Thieves' Cant
+> - **Challenge** 3 (700 XP)
+> ___
+> ***Gnome Cunning.*** The concierge has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.
+>
+> ***Sneak Attack.*** Once per turn, the concierge deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet or an ally of the concierge that isn't incapacitated and the concierge doesn't have disadvantage on the attack roll.
+> ___
+>
+> ### Actions
+> ***Dagger.*** *Melee Weapon:* Attack: +5 to hit, reach 5ft., one target. Hit 5 (1d4 + 3) piercing damage.
+
+\pagebreak
+
+### Uniquet Earth Elementalist
+Among Firebrand’s cabal of black magicians, this elf is a fairly common example of the type of wizard who finds themselves pressed into service taming the raw elements of Malice.
+
+Twisted and cruel, the elf has an affinity for fire and earth spells of all sorts. These cultists rarely appear alone, and are frequently guarded by ogres, bugbears, and other chaotic evil humanoids and giants enslaved by the red dragons.
+
+___
+> ## Unquiet Earth Elementalist
+>*Medium humanoid (elf), chaotic evil*
+> ___
+> - **Armor Class** 12 (15 with mage armor)
+> - **Hit Points** 54 (12d8)
+> - **Speed** 30ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|8 (-1)|14 (+2)|10 (+0)|18 (+4)|12 (+1)|10 (+0)|
+>___
+> - **Saving Throws** Int +7, Wis +4
+> - **Skills** Arcana +7, History +7
+> - **Senses** darkvision 60 ft., passive Perception 11
+> - **Languages** Draconic, Elvish
+> - **Challenge** 5 (1800 XP)
+> ___
+> ***Fey Ancestry.*** The Unquiet Earth elementalist has advantage on saving throws against being charmed, and magic cannot put them to sleep.
+>
+> Spellcasting. The Unquiet Earth elementalist is a 9th level spellcaster. Its spellcasting ability is Intellligence (spell save DC 15, +7 to hit with spell attacks). The elementalist has the following wizard spells prepared:
+>
+> Cantrips (at will): *fire bolt*, *mage hand*, *shocking grasp*, *true strike*
+>
+> 1st level (4 slots): *burning hands*, *expeditious retreat*, *mage armor*, *shield*
+>
+> 2nd level (3 slots): *flaming sphere*, *invisibility*, *scorching ray*
+>
+> 3rd level (3 slots): *counterspell*, *fireball*
+>
+> 4th level (3 slots): *fire shield*, *stoneskin*
+>
+> 5th level (1 slot): *wall of stone*
+> ___
+>
+> ### Actions
+> ***Ritual Dagger.*** *Melee Weapon* Attack: +5 to hit, reach 5ft., one target. Hit 4 (1d4 + 2) piercing damage.
+
+\columnbreak
+
+## Wild Gods Warlord
+The Wild Gods of Exaurdon Isle are capricious and flighty, but they are also extremely lethal. Their champions are brutally swift and capable of moving between the trees quicker than dragons can track their movements, appearing from thickets to spear vassals and young wyrms on swords of shining, enchanted crystal.
+
+___
+> ## Wild Gods Warlord
+>*Medium fey, chaotic neutral*
+> ___
+> - **Armor Class** 20 (plate armor and shield)
+> - **Hit Points** 150 (20d8 + 60)
+> - **Speed** 30ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|16 (+3)|18 (+4)|16 (+3)|16 (+3)|12 (+1)|16 (+3)|
+>___
+> - **Saving Throws** Dex +8, Cha +7
+> - **Damage Resistances** radiant
+> - **Damage Vulnerabilities** necrotic
+> - **Senses** darkvision 60ft., passive Perception 11
+> - **Languages** Sylvan
+> - **Challenge** 11 (7200 XP)
+> ___
+> ***Magic Resistance.*** The warlord has advantage on saving throws against spells and other magical effects.
+>
+> ***Tree Stride.*** Once on its turn, the Wild Gods Warlord can use 10 feet of its movement to step magically into one living tree within its reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger.
+>
+> ***Spellcasting.*** The warlord's spellcasting ability is Charisma (spell save DC 15). The warlord can innately cast the following spells, requiring no material components.
+> 
+>At will: *druidcraft*
+>
+>1/day each: *hunter's mark*, *pass without trace*
+>
+>3/day each: *entangle*, *misty step*
+>
+> ### Actions
+> ***Multiattack.*** The warlord makes 3 rapier attacks or 3 longbow attacks.
+>
+> ***Crystal Rapier.*** *Melee Weapon:* Attack: +8 to hit, reach 5ft., one target. Hit 13 (2d8 + 4) piercing damage plus 5 (1d8) radiant damage.
+>
+> ***Heartwood Longbow.*** *Ranged Weapon* Attack: +8 to hit, range 150/600 ft., Hit: 13 (2d8 + 4) piercing damage plus 5 (1d8) poison damage.
+
+\pagebreak
 
 ### Wrapping to Column Two
 Sometimes you want your content in column 1 to be cut short and continue on to column 2. The simplest way to accomplish this is to use:
@@ -72,4 +1926,9 @@ This is an example of using html and built in styles to get a desired output.
 This is your playground. Feel free to remove this and the content above, or keep it around for a reference.
 
 <div class='footnote'>Part 2 | Your Introduction</div>
+
+\pagebreak
+
+
+
 
